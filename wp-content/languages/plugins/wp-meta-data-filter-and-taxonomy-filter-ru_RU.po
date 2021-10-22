@@ -1,0 +1,2682 @@
+# Translation of Plugins - WordPress Meta Data and Taxonomies Filter (MDTF) - Development (trunk) in Russian
+# This file is distributed under the same license as the Plugins - WordPress Meta Data and Taxonomies Filter (MDTF) - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-03-15 19:52:56+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - WordPress Meta Data and Taxonomies Filter (MDTF) - Development (trunk)\n"
+
+#: core.php:405 core.php:445
+msgid "something wrong with meta key"
+msgstr "что-то не так с мета-ключом"
+
+#: core.php:384
+msgid "something wrong with post ID"
+msgstr "что-то не так с ID поста"
+
+#: index.php:1995
+msgid "Filter `%s` (%s) already has such key. Filter status: `%s`!"
+msgstr "Фильтр `%s` (%s) уже имеет такой ключ. Статус фильтра: `%s`!"
+
+#: index.php:1964
+msgid "Such key already exists in current filter or its the same fileld. Try another key!"
+msgstr "Такой ключ уже существует в текущем фильтре или в том же поле. Попробуйте другой ключ!"
+
+#: index.php:1957
+msgid "Attention! Meta key must be begin from medafi_!!"
+msgstr "Внимание! Мета-ключ должен начинаться с medafi_ !!"
+
+#: index.php:1952
+msgid "Attention! Meta key must be begin from medafi_ but can not such the name!!"
+msgstr "Внимание! Мета-ключ должен начинаться с medafi_, но не может иметь такое имя !!"
+
+#: index.php:1231
+msgid "No term are created for %s"
+msgstr "Термины для %s не созданы"
+
+#: index.php:1012
+msgid "Categories"
+msgstr "Категории"
+
+#: index.php:1011
+msgid "Html Items Count"
+msgstr "Количество элементов HTML"
+
+#: index.php:1001
+msgid "digits only"
+msgstr "только цифры"
+
+#: index.php:938
+msgid "Uses ONLY for current section with checkboxes. Not for taxonomies ..."
+msgstr "Используется ТОЛЬКО для текущего раздела с чекбоксами. Не для таксономий ..."
+
+#: index.php:923
+msgid "Show as multiple checkbox select"
+msgstr "Показать как мульти-чекбоксовый селект"
+
+#: index.php:909
+msgid "The section toggle"
+msgstr "Переключатель раздела"
+
+#: index.php:906
+msgid "On backend"
+msgstr "На бэкэнде"
+
+#: index.php:903
+msgid "On front (widget)"
+msgstr "На фронте (виджет)"
+
+#: index.php:901
+msgid "If you have a lot of elements in the filter section you can set max-height. Set 0 if you do not need it."
+msgstr "Если у вас много элементов в разделе фильтра, вы можете установить максимальную высоту. Установите 0, если он вам не нужен."
+
+#: index.php:900
+msgid "The section max-heigh"
+msgstr "Макс-высота секции"
+
+#: index.php:893
+msgid "integer number"
+msgstr "целое число"
+
+#: index.php:876
+msgid "WordPress Meta Data & Taxonomies Filter plugin can't copy the template file to your current theme from wp-content/plugins/meta-data-filter/views/to_theme/template-meta-data-filter.php. Please upload this file using ftp to your current theme folder from: plugins/meta-data-filter/veiws/to_theme."
+msgstr "Плагин WordPress Meta Data & Taxonomies Filter не может скопировать файл шаблона в вашу текущую тему из  wp-content/plugins/meta-data-filter/views/to_theme/template-meta-data-filter.php. Загрузите этот файл по ftp в папку с текущей темой из: plugins/meta-data-filter/veiws/to_theme."
+
+#: index.php:827
+msgid "MDTF Results Page"
+msgstr "Страница результатов MDTF"
+
+#: index.php:816
+msgid "Meta Data Filter Style"
+msgstr "Стиль фильтра метаданных"
+
+#: index.php:815 index.php:1013
+msgid "Filter sequence on front"
+msgstr "Последовательность фильтров на фронте"
+
+#: index.php:405
+msgid "MDTF Utilities"
+msgstr "Утилиты MDTF"
+
+#: index.php:359
+msgid "Documentation"
+msgstr "Документация"
+
+#: index.php:334
+msgid "each %s days"
+msgstr "каждые %s дней"
+
+#: index.php:109
+msgid "Category"
+msgstr "Категория"
+
+#: index.php:106
+msgid "No Categories found in Trash"
+msgstr "Категории в корзине не найдены"
+
+#: index.php:105
+msgid "No Categories found"
+msgstr "Категории не найдены"
+
+#: index.php:104
+msgid "Search Categories"
+msgstr "Поиск категорий"
+
+#: index.php:103
+msgid "View Category"
+msgstr "Просмотр категории"
+
+#: index.php:102
+msgid "New Category"
+msgstr "Новая категория"
+
+#: index.php:101
+msgid "Edit Categories"
+msgstr "Редактировать категории"
+
+#: index.php:100
+msgid "Add New Category"
+msgstr "Добавить новую категорию"
+
+#: index.php:97 index.php:98
+msgid "MDTF Categories"
+msgstr "Категории MDTF"
+
+#: index.php:75
+msgid "No Filter sections found in Trash"
+msgstr "Разделы фильтра не найдены в корзине"
+
+#: index.php:74
+msgid "No Filter sections found"
+msgstr "Разделы фильтра не найдены"
+
+#: index.php:73
+msgid "Search Filter sections"
+msgstr "Разделы фильтра поиска"
+
+#: index.php:72
+msgid "View Filter Section"
+msgstr "Просмотр раздела фильтров"
+
+#: index.php:71
+msgid "New Filter Section"
+msgstr "Новый раздел фильтра"
+
+#: index.php:70
+msgid "Edit Filter Section"
+msgstr "Редактировать раздел фильтра"
+
+#: index.php:68 index.php:69
+msgid "Add New Filter Section"
+msgstr "Добавить новую секцию фильтра"
+
+#: index.php:67
+msgid "Filters sections"
+msgstr "Разделы фильтров"
+
+#: index.php:66
+msgid "MDTF Filters"
+msgstr "Фильтры MDTF"
+
+#: views/utilities.php:7
+msgid "Terms to meta"
+msgstr "Тёрмы в мета"
+
+#: views/utilities.php:3
+msgid "MDTF Custom Utilities"
+msgstr "Пользовательские утилиты MDTF"
+
+#: views/sort_panel/select_filter_panel.php:13
+msgid "ascending"
+msgstr "По возрастанию"
+
+#: views/sort_panel/select_filter_panel.php:12
+msgid "descending"
+msgstr "По убыванию"
+
+#: views/sort_panel/metabox.php:101
+msgid "Example: _price^Price"
+msgstr "Пример: _price^Цена"
+
+#: views/sort_panel/metabox.php:59
+msgid "Default order"
+msgstr "Стандартный порядок"
+
+#: views/sort_panel/metabox.php:54
+msgid "Special words: %s. Example: title^Title"
+msgstr "Специяальные слова: %s. Пример: title^Заголовок"
+
+#: views/sort_panel/metabox.php:44
+msgid "Add meta key"
+msgstr "Добавить мета-ключ"
+
+#: views/sort_panel/metabox.php:42
+msgid "Sort panel meta keys"
+msgstr "Мета-ключи панели сортировки"
+
+#: views/sort_panel/metabox.php:29 views/sort_panel/metabox.php:37
+msgid "Show results taxonomies navigation"
+msgstr "Показать результаты навигации по таксономиям"
+
+#: views/sort_panel/metabox.php:15
+msgid "Buttons"
+msgstr "Кнопки"
+
+#: views/sort_panel/metabox.php:14
+msgid "Drop-down"
+msgstr "Селект"
+
+#: views/sort_panel/metabox.php:8
+msgid "Panel type"
+msgstr "Тип панели"
+
+#: views/page/data_meta_box.php:10
+msgid "category is not selected"
+msgstr "категория не выбрана"
+
+#: views/page/draw_back_page_items.php:572
+msgid "By author"
+msgstr "По автору"
+
+#: views/page/draw_back_page_items.php:557
+msgid "Taxonomy block is placed here"
+msgstr "Блок таксономии размещен здесь"
+
+#: views/page/draw_back_page_items.php:537
+msgid "enter pin description"
+msgstr "введите описание пина"
+
+#: views/page/draw_back_page_items.php:527
+msgid "enter longitude"
+msgstr "введите долготу"
+
+#: views/page/draw_back_page_items.php:519
+msgid "enter latitude"
+msgstr "введите широту"
+
+#: views/page/draw_back_page_items.php:466
+msgid "none"
+msgstr "ничего"
+
+#: views/page/draw_back_page_items.php:458
+msgid "Enter value. Empty means zero."
+msgstr "Введите значение. Пусто означает ноль."
+
+#: views/page/draw_back_page_items.php:280
+msgid "title"
+msgstr "заголовок"
+
+#: views/page/draw_back_page_items.php:115
+#: views/page/draw_back_page_items.php:171
+#: views/page/draw_back_page_items.php:217
+#: views/page/draw_back_page_items.php:292
+#: views/page/draw_back_page_items.php:344
+#: views/page/draw_back_page_items.php:409
+#: views/page/draw_back_page_items.php:490
+msgid "key is empty, please check filter data!"
+msgstr "ключ пуст, проверьте данные фильтра!"
+
+#: views/page/draw_back_page_items.php:81
+#: views/page/draw_back_page_items.php:119
+#: views/page/draw_back_page_items.php:415
+msgid "max"
+msgstr "максимально"
+
+#: views/page/draw_back_page_items.php:81
+#: views/page/draw_back_page_items.php:119
+#: views/page/draw_back_page_items.php:415
+msgid "min"
+msgstr "минимально"
+
+#: views/page/draw_back_page_items.php:38
+msgid "from/to"
+msgstr "от/к"
+
+#: views/settings.php:1395
+msgid "Assign"
+msgstr "Назначить"
+
+#: views/settings.php:1381
+msgid "Enter filter-category ID"
+msgstr "Введите ID категории фильтра"
+
+#: views/settings.php:1376
+msgid "Check post types to which filter ID should be assign. Enter right data, do not joke with it!"
+msgstr "Проверьте типы постов, которым должен быть назначен ID фильтра. Вводите правильные данные, не шутите с этим!"
+
+#: views/settings.php:1363
+msgid "Mass assign filter-category ID to any posts types"
+msgstr "Массовое присвоение ID категории фильтра любым типам постов"
+
+#: views/settings.php:1322
+msgid "Save Settings"
+msgstr "Сохранить настройки"
+
+#: views/settings.php:1302
+msgid "Duplicate, clone, backup, move and transfer an entire site from one location to another."
+msgstr "Копирование, клонирование, резервное копирование, перемещение и перенос всего сайта из одного места в другое."
+
+#: views/settings.php:1294
+msgid "Shrink, beautify, track, manage and share any URL on or off of your WordPress website. Create links that look how you want using your own domain name!"
+msgstr "Сжимайте, украшайте, отслеживайте, управляйте и делитесь любым URL-адресом на вашем веб-сайте WordPress или за его пределами. Создавайте ссылки, которые выглядят так, как вы хотите, используя собственное доменное имя!"
+
+#: views/settings.php:1288
+msgid "It concatenates all scripts and styles, minifies and compresses them, adds expires headers, caches them, and moves styles to the page head, and scripts to the footer"
+msgstr "Он объединяет все скрипты и стили, минимизирует и сжимает их, добавляет заголовки с истекшим сроком действия, кэширует их и перемещает стили в заголовок страницы, а скрипты - в нижний колонтитул."
+
+#: views/settings.php:1282
+msgid " Create popping custom responsive layouts with sidebars and widgets in just a few clicks. Choose from variety of overlays, positioning, page visibility, active period, open/close events, custom styling, custom sidebars and much more."
+msgstr "Создавайте настраиваемые адаптивные макеты с боковыми панелями и виджетами всего за несколько кликов. Выбирайте из множества наложений, позиционирования, видимости страницы, активного периода, событий открытия / закрытия, настраиваемого стиля, настраиваемых боковых панелей и многого другого."
+
+#: views/settings.php:1275
+msgid "Order Categories and all custom taxonomies terms (hierarchically) and child terms using a Drag and Drop Sortable javascript capability"
+msgstr "Упорядочить категории и все тёрмы пользовательской таксономии (иерархически) и дочерние тёрмы с помощью функций javascript с возможностью сортировки перетаскиванием."
+
+#: views/settings.php:1270
+msgid "Cache pages, allow to make a lot of search queries on your site without high load on your server!"
+msgstr "Кешируйте страницы, позволяйте делать множество поисковых запросов на вашем сайте без большой нагрузки на ваш сервер!"
+
+#: views/settings.php:1265
+msgid "Widget Logic lets you control on which pages widgets appear using"
+msgstr "Логика виджетов позволяет вам контролировать, на каких страницах появляются виджеты"
+
+#: views/settings.php:1260
+msgid "This plugin provides an easy to use interface to create and administer custom post types and taxonomies in WordPress."
+msgstr "Этот плагин предоставляет простой в использовании интерфейс для создания и администрирования пользовательских типов сообщений и таксономий в WordPress."
+
+#: views/settings.php:1255
+msgid "Insert Gallery in post, page and custom post types just in two clicks"
+msgstr "Вставьте галерею в посты, страницы и пользовательские типы сообщений всего в два клика"
+
+#: views/settings.php:1250
+msgid "WooCommerce Active Products Table - WOOT - (new name is PROTAS) WooCommerce plugin for displaying shop products in table format. Woo Products Tables makes focus for your buyers on the things they want to get, nothing superfluous, just what the client wants, and full attention to what is offered! You are as the shop owner can increase your business site benefits by providing to your customers structured information through responsive, beautiful products and highly featured active tables."
+msgstr "Таблица активных товаров WooCommerce - WOOT - (новое название PROTAS) Плагин WooCommerce для отображения товаров магазина в формате таблицы. Таблицы продуктов Woo фокусируют внимание ваших покупателей на том, что они хотят получить, ничего лишнего, только на том, что хочет клиент, и на полном внимании к тому, что предлагается! Вы, как владелец магазина, можете увеличить преимущества своего бизнес-сайта, предоставляя своим клиентам структурированную информацию с помощью отзывчивых, красивых и высокофункциональных активных таблиц."
+
+#: views/settings.php:1245
+msgid "WordPress plugin for managing and bulk edit WooCommerce Products data in the reliable and flexible way! Be professionals with managing data of your e-shop!"
+msgstr "Плагин WordPress для управления и массового редактирования данных продуктов WooCommerce надежным и гибким способом! Будьте профессионалом в управлении данными своего интернет-магазина!"
+
+#: views/settings.php:1240
+msgid "WooCommerce Currency Switcher – is the plugin that allows you to switch to different currencies and get their rates converted in the real time!"
+msgstr "Переключатель валют WooCommerce - это плагин, который позволяет вам переключаться на разные валюты и конвертировать их курсы в режиме реального времени!"
+
+#: views/settings.php:1233
+msgid "Recommended plugins"
+msgstr "Рекомендуемые плагины"
+
+#: views/settings.php:1223
+msgid "Easy entry video tutorial"
+msgstr "Легкое видео-руководство"
+
+#: views/settings.php:1210
+msgid "Demo sites"
+msgstr "Демо сайты"
+
+#: views/settings.php:1194
+msgid "Use it when you are need additional action after AJAX redraw your products in shop page or in page with shortcode!"
+msgstr "Используйте его, когда вам нужны дополнительные действия после того, как AJAX перерисовывает ваши продукты на странице магазина или на странице с шорткодом!"
+
+#: views/settings.php:1189
+msgid "JavaScript code after AJAX is done"
+msgstr "Код JavaScript после выполнения AJAX"
+
+#: views/settings.php:1183
+msgid "If you are need to customize something and you don't want to lose your changes after update"
+msgstr "Если вам нужно что-то настроить и вы не хотите потерять свои изменения после обновления"
+
+#: views/settings.php:1178
+msgid "Custom CSS code"
+msgstr "Пользовательский код CSS"
+
+#: views/settings.php:1171
+msgid "This option excludes initialization of the plugin on all pages of the site except links in the textarea. One row - one link!<br />Example: http://woocommerce.wp-filter.com/ajaxed-search-7/ - slash in the end of the link should be!"
+msgstr "Эта опция исключает инициализацию плагина на всех страницах сайта, кроме тех на которые указаны ссылки в текстовом поле. Одна строка - одна ссылка! <br /> Пример: http://woocommerce.wp-filter.com/ajaxed-search-7/ - косая черта в конце ссылки должна быть!"
+
+#: views/settings.php:1166
+msgid "Init plugin on the next site pages <span style='color: red;'>only</span>"
+msgstr "Инициировать плагин на следующих страницах сайта <span style='color: red;'> только </span>"
+
+#: views/settings.php:1159
+msgid "Useful thing when you already set your site IN THE PRODUCTION MODE - its getting terms for filter faster without big MySQL queries! If you actively adds new terms every day or week you can set cron period for cleaning. Another way set: 'not clean cache automatically'!"
+msgstr "Полезная вещь, когда вы уже настроили свой сайт в продакшен - он быстрее получает тёрмы для фильтрации без больших MySQL запросов! Если вы активно добавляете новые тёрмы каждый день или неделю, вы можете установить период для очистки кроном. Другой способ установки: «не очищать кеш автоматически»!"
+
+#: views/settings.php:1101
+msgid "Cache terms"
+msgstr "Кешировать тёрмы"
+
+#: views/settings.php:1089
+msgid "MDTF cannot create the database table! Make sure that your mysql user has the CREATE privilege! Do it manually using your host panel&phpmyadmin!"
+msgstr "MDTF не может создать таблицу базы данных! Убедитесь, что у вашего пользователя mysql есть привилегия CREATE! Сделайте это вручную, используя хост cpanel phpmyadmin!"
+
+#: views/settings.php:1065
+msgid "Useful thing when you already started your site and use dynamic recount -> it make recount very fast! Of course if you added new posts which have to be in search results you have to clean this cache! RECOMMENDED to set it to any time-term from the list to avoid query slowing in future!"
+msgstr "Полезная вещь, когда вы уже запустили свой сайт и используете динамический пересчет -> он делает пересчет очень быстро! Конечно, если вы добавили новые посты, которые должны быть в результатах поиска, вам необходимо очистить этот кеш! РЕКОМЕНДУЕТСЯ установить любое время из списка, чтобы избежать замедления запроса в будущем!"
+
+#: views/settings.php:1051 views/settings.php:1145
+msgid "clean cache automatically each 7 days"
+msgstr "очищать кеш автоматически каждые 7 дней"
+
+#: views/settings.php:1050 views/settings.php:1144
+msgid "clean cache automatically each 6 days"
+msgstr "очищать кеш автоматически каждые 6 дней"
+
+#: views/settings.php:1049 views/settings.php:1143
+msgid "clean cache automatically each 5 days"
+msgstr "очищать кеш автоматически каждые 5 дней"
+
+#: views/settings.php:1048 views/settings.php:1142
+msgid "clean cache automatically each 4 days"
+msgstr "очищать кеш автоматически каждые 4 дней"
+
+#: views/settings.php:1047 views/settings.php:1141
+msgid "clean cache automatically each 3 days"
+msgstr "очищать кеш автоматически каждые 3 дней"
+
+#: views/settings.php:1046 views/settings.php:1140
+msgid "clean cache automatically each 2 days"
+msgstr "очищать кеш автоматически каждые 2 дня"
+
+#: views/settings.php:1045 views/settings.php:1139
+msgid "clean cache automatically daily"
+msgstr "очищать кеш автоматически ежедневно"
+
+#: views/settings.php:1044 views/settings.php:1138
+msgid "clean cache automatically twicedaily"
+msgstr "очищать кеш автоматически дважды в день"
+
+#: views/settings.php:1043 views/settings.php:1137
+msgid "clean cache automatically hourly"
+msgstr "очищать кеш автоматически ежечасно"
+
+#: views/settings.php:1042 views/settings.php:1136
+msgid "do not clean cache automatically"
+msgstr "не очищать кеш автоматически"
+
+#: views/settings.php:1033 views/settings.php:1127
+msgid "clear cache"
+msgstr "очистить кэш"
+
+#: views/settings.php:1007
+msgid "Cache dynamic recount number for each item in filter"
+msgstr "Кешировать значение динамического пересчета для каждого элемента в фильтре"
+
+#: views/settings.php:1000
+msgid "Better keep search data in sessions, but in some of reasons it sometimes not possible, so set it to transients. But transients make additional queries to data base! Set it to sessions when your search is working fine to exclude case when search doesn't work because data cannot be keeps in the session!"
+msgstr "Лучше сохранять данные поиска в сессиях, но по некоторым причинам это иногда невозможно, поэтому используйте транзиент. Но транзиенты делают дополнительные запросы к базе данных!"
+
+#: views/settings.php:974
+msgid "Where to keep search data"
+msgstr "Где хранить данные поиска"
+
+#: views/settings.php:962
+msgid "Google Map  API key"
+msgstr "Ключ API карты Google"
+
+#: views/settings.php:958
+msgid "Some themes has already included google maps js, so maybe you will not need this option. But if you are need this - you can include it on pages (ID) on which you are using map, not on all pages of your site! Set <b>-1</b> if you want to include it on all pages of your site."
+msgstr "Некоторые темы уже включают js-карты Google Maps, поэтому, возможно, вам не понадобится эта опция. Но если вам это нужно - вы можете включать его на страницы (ID), на которых вы используете карту, а не на всех страницах вашего сайта! Установите <b> -1 </b>, если хотите включить его на все страницы своего сайта."
+
+#: views/settings.php:951
+msgid "Include Google Map JS on the next pages"
+msgstr "Включите Google Map JS на следующих страницах"
+
+#: views/settings.php:927
+msgid "Any text notes for customer under subscription form."
+msgstr "Любые текстовые примечания для клиента при подписке."
+
+#: views/settings.php:924
+msgid "Notes for customer"
+msgstr "Примечания для клиента"
+
+#: views/settings.php:919
+msgid "Which limitation has priority. Event after which user stop getting the emails. Both - means that any first event (\"Subscription time\" or \"Emails count\") of two ones, will reset user subscription."
+msgstr "Какое ограничение имеет приоритет. Событие, после которого пользователь перестает получать электронные письма. Оба - означает, что любое первое событие («Время подписки» или «Количество писем») из двух приведет к сбросу подписки пользователя."
+
+#: views/settings.php:911
+msgid "Both"
+msgstr "Оба"
+
+#: views/settings.php:910
+msgid "By emails count"
+msgstr "По количеству писем"
+
+#: views/settings.php:909
+msgid "By date"
+msgstr "По дате"
+
+#: views/settings.php:901
+msgid "Priority of limitations"
+msgstr "Приоритет ограничений"
+
+#: views/settings.php:896
+msgid "Maximum number of emails per one subscribed user. -1 means no limit. "
+msgstr "Максимальное количество писем на одного подписанного пользователя. -1 означает без ограничений."
+
+#: views/settings.php:893
+msgid "Emails count"
+msgstr "Количество писем"
+
+#: views/settings.php:888
+msgid "How long user will get emails after subscription. "
+msgstr "Как долго пользователь будет получать электронные письма после подписки"
+
+#: views/settings.php:879
+msgid "Two months"
+msgstr "Два месяца"
+
+#: views/settings.php:878
+msgid "One month"
+msgstr "Один месяц"
+
+#: views/settings.php:877
+msgid "Two weeks"
+msgstr "Две недели"
+
+#: views/settings.php:876
+msgid "One week"
+msgstr "Одна неделя"
+
+#: views/settings.php:875
+msgid "No limit"
+msgstr "Без ограничений"
+
+#: views/settings.php:867
+msgid "Subscription time"
+msgstr "Время подписки"
+
+#: views/settings.php:862
+msgid "Text in the body of the email. You can use next variables: [DISPLAY_NAME], [USER_NICENAME], [PRODUCT_COUNT]. "
+msgstr "Текст в теле письма. Вы можете использовать следующие переменные: [DISPLAY_NAME], [USER_NICENAME], [PRODUCT_COUNT]."
+
+#: views/settings.php:859
+msgid "Text of the email"
+msgstr "Текст письма"
+
+#: views/settings.php:854
+msgid "Subject of the email. "
+msgstr "Тема письма."
+
+#: views/settings.php:851
+msgid "Subject of the email"
+msgstr "Тема письма"
+
+#: views/settings.php:846
+msgid "Text in the email header."
+msgstr "Текст в заголовке электронного письма."
+
+#: views/settings.php:843
+msgid "Title of the email"
+msgstr "Заголовок электронного письма"
+
+#: views/settings.php:838
+msgid "Maximum number of subscriptions for a single registered user. "
+msgstr "Максимальное количество подписок для одного зарегистрированного пользователя."
+
+#: views/settings.php:835
+msgid "Max subscriptions per user"
+msgstr "Максимальное количество подписок на пользователя"
+
+#: views/settings.php:830
+msgid "To reset the key, just delete it here and save the plugin settings OR write by hands your own. Key should be min 16 symbols."
+msgstr "Чтобы сбросить ключ, просто удалите его здесь и сохраните настройки плагина ИЛИ напишите своими руками. Ключ должен состоять минимум из 16 символов."
+
+#: views/settings.php:829
+msgid "For external cron use the next link"
+msgstr "Для внешнего cron используйте следующую ссылку"
+
+#: views/settings.php:826
+msgid "External cron key (is recommended as flexible for timetable)"
+msgstr "Внешний ключ cron (рекомендуется для расписания)"
+
+#: views/settings.php:821
+msgid "Period of emailing to subscribed users. Set it to \"No\" if you going to use external cron. "
+msgstr "Период рассылки подписчикам. Установите значение «Нет», если вы собираетесь использовать внешний cron."
+
+#: views/settings.php:813
+msgid "min1"
+msgstr "1 мин."
+
+#: views/settings.php:811
+msgid "twicemonthly"
+msgstr "дважды в месяц"
+
+#: views/settings.php:798
+msgid "WordPress cron period"
+msgstr "Период cron WordPress"
+
+#: views/settings.php:793
+msgid "The text before subscription block"
+msgstr "Текст перед блоком подписки"
+
+#: views/settings.php:783
+msgid "Short Description"
+msgstr "Краткое описание"
+
+#: views/settings.php:773
+msgid "Dear [DISPLAY_NAME], we increased the range of our products. Number of new products: [PRODUCT_COUNT]"
+msgstr "Уважаемый [DISPLAY_NAME], мы расширили ассортимент наших товаров. Количество новых продуктов: [PRODUCT_COUNT]"
+
+#: views/settings.php:772
+msgid "New Posts"
+msgstr "Новый пост"
+
+#: views/settings.php:771
+msgid "New Posts by your request"
+msgstr "Новые посты по вашему запросу"
+
+#: views/settings.php:745
+msgid "Pagination CSS File"
+msgstr "CSS-файл разбивки на страницы"
+
+#: views/settings.php:739
+msgid "Show \"Before Markup\" and \"After Markup\", even if the page list is empty?"
+msgstr "Показывать «До разметки» и «После разметки», даже если список страниц пуст?"
+
+#: views/settings.php:732
+msgid "Markup Display"
+msgstr "Отображение разметки"
+
+#: views/settings.php:713
+msgid "Page Gap"
+msgstr "Разрыв страницы"
+
+#: views/settings.php:693
+msgid "Page Anchors"
+msgstr "Якоря страницы"
+
+#: views/settings.php:674
+msgid "Page Range"
+msgstr "Диапазон страниц"
+
+#: views/settings.php:655
+msgid "After Markup"
+msgstr "После разметки"
+
+#: views/settings.php:636
+msgid "Before Markup"
+msgstr "Перед разметкой"
+
+#: views/settings.php:617
+msgid "Next Page"
+msgstr "Следующая страница"
+
+#: views/settings.php:598
+msgid "Previous Page"
+msgstr "Предыдущая страница"
+
+#: views/settings.php:579
+msgid "Pagination Label"
+msgstr "Ярлык разбиения на страницы"
+
+#: views/settings.php:558
+msgid "Check it if you want to make ajax searching directly on woocommerce shop page. BUT! It is not possible for 100% because a lot of wordpress themes developers not use in the right way woocommerce hooks woocommerce_before_shop_loop AND woocommerce_after_shop_loop. Works well with native woocommerce themes as Canvas and Primashop for example!"
+msgstr "Установите этот флажок, если хотите выполнять поиск с помощью ajax прямо на странице магазина woocommerce. НО! Это невозможно на 100%, потому что многие разработчики тем WordPress неправильно используют хуки woocommerce woocommerce_before_shop_loop И woocommerce_after_shop_loop. Хорошо работает с собственными темами woocommerce, например, с Canvas и Primashop!"
+
+#: views/settings.php:551
+msgid "Try to make shop page AJAXED"
+msgstr "Попробуйте сделать страницу магазина AJAXED"
+
+#: views/settings.php:539
+msgid "Exclude 'out of stock' products from search"
+msgstr "Исключить из поиска товары, которых нет в наличии"
+
+#: views/settings.php:522
+msgid "Ion-Range slider js lib skin for range-sliders of the plugin"
+msgstr "Ion-Range slider скин для диапазонов-слайдеров плагина"
+
+#: views/settings.php:500
+msgid "Range slider skin"
+msgstr "Скин Range-Slider"
+
+#: views/settings.php:433
+msgid "Skin"
+msgstr "Скин"
+
+#: views/settings.php:430
+msgid "JS CUSTOMIZED CHECKBOXES AND RADIO BUTTONS FOR JQUERY: http://fronteed.com/iCheck/"
+msgstr "НАСТРАИВАЕМЫЕ ЧЕКБОКСЫ И РАДИОКНОПКИ JS ДЛЯ JQUERY: http://fronteed.com/iCheck/"
+
+#: views/settings.php:423
+msgid "Use icheck js library for checkboxes"
+msgstr "Используйте библиотеку icheck js для чекбоксов"
+
+#: views/settings.php:418
+msgid "Beautiful js scroll bars. Sometimes not compatible with some wordpress themes"
+msgstr "Красивые полосы прокрутки. Иногда несовместимо с некоторыми темами WordPress"
+
+#: views/settings.php:411
+msgid "Use custom scroll js bar"
+msgstr "Использовать настраиваемую полосу прокрутки"
+
+#: views/settings.php:406
+msgid "Not compatible with all wp themes. Uncheck the checkbox it is works bad."
+msgstr "Не совместим со всеми темами WP. Снимите галочку, если это плохо работает."
+
+#: views/settings.php:402
+msgid "for shortcodes"
+msgstr "для шорткодов"
+
+#: views/settings.php:396
+msgid "for widgets"
+msgstr "для виджетов"
+
+#: views/settings.php:391
+msgid "Use chosen js library for drop-downs in the search forms"
+msgstr "Использовать chosen js библиотеку для выпадающих списков в формах поиска"
+
+#: views/settings.php:379
+msgid "Full - DD, d MM, yy"
+msgstr "Полный - DD, d MM, yy"
+
+#: views/settings.php:378
+msgid "Medium - d MM, y"
+msgstr "Средний - d MM, y"
+
+#: views/settings.php:377
+msgid "Short - d M, y"
+msgstr "Короткий - d M, y"
+
+#: views/settings.php:376
+msgid "ISO 8601 - yy-mm-dd"
+msgstr "ISO 8601 - yy-mm-dd"
+
+#: views/settings.php:375
+msgid "Europe - dd-mm-yy"
+msgstr "Европа - дд-мм-гг"
+
+#: views/settings.php:374
+msgid "Default - mm/dd/yy"
+msgstr "По умолчанию - мм / дд / гг"
+
+#: views/settings.php:370
+msgid "jQuery-ui calendar date format"
+msgstr "jQuery-ui формат календарной даты"
+
+#: views/settings.php:366
+msgid "Link and width/height to png icon for tab slideout shortcode"
+msgstr "Ссылка и ширина / высота на значка png для slideout-шорткода"
+
+#: views/settings.php:365
+msgid "default icon height"
+msgstr "высота значка по умолчанию"
+
+#: views/settings.php:364
+msgid "default icon width"
+msgstr "ширина значка по умолчанию"
+
+#: views/settings.php:363
+msgid "default icon url"
+msgstr "URL значка по умолчанию"
+
+#: views/settings.php:361
+msgid "Tab slideout icon image settings"
+msgstr "Настройки изображения значка выдвигающейся вкладки"
+
+#: views/settings.php:355
+msgid "Tooltip max width"
+msgstr "Максимальная ширина всплывающей подсказки"
+
+#: views/settings.php:351
+msgid "Link to png icon for tooltip in widgets and shortcodes"
+msgstr "Ссылка на значок png для всплывающей подсказки в виджетах и шорткодах"
+
+#: views/settings.php:350
+msgid "default icon"
+msgstr "значок по умолчанию"
+
+#: views/settings.php:348
+msgid "Tooltip icon image URL"
+msgstr "URL изображения значка всплывающей подсказки"
+
+#: views/settings.php:337
+msgid "Shadow"
+msgstr "Тень"
+
+#: views/settings.php:336
+msgid "Punk"
+msgstr "Розовый"
+
+#: views/settings.php:335
+msgid "Noir"
+msgstr "Тёмный"
+
+#: views/settings.php:334
+msgid "Light"
+msgstr "Светлый"
+
+#: views/settings.php:329
+msgid "Tooltip theme"
+msgstr "Тема подсказки"
+
+#: views/settings.php:316
+msgid "Show terms childs always in taxonomies shown as checkboxes"
+msgstr "Всегда показывать дочерние тёрмы в таксономиях, отмеченных флажками"
+
+#: views/settings.php:309
+msgid "Show terms childs"
+msgstr "Показать тёрмы дочерних элементов"
+
+#: views/settings.php:303
+msgid "Ignore sticky posts in search results"
+msgstr "Игнорировать прикрепленные посты в результатах поиска"
+
+#: views/settings.php:296
+msgid "Ignore sticky posts"
+msgstr "Пропускать прикрепленные посты"
+
+#: views/settings.php:291
+msgid "Hide button of search button shortcode on mobile devices"
+msgstr "Скрыть кнопку шорткода кнопки поиска на мобильных устройствах"
+
+#: views/settings.php:284
+msgid "Hide [mdf_search_button] on mobile devices"
+msgstr "Скрыть [mdf_search_button] на мобильных устройствах"
+
+#: views/settings.php:280
+msgid "Toggle close sign on front widget while using toggles for sections."
+msgstr "Переключить знак закрытия на виджете при использовании переключателей для разделов."
+
+#: views/settings.php:277
+msgid "Toggle close sign"
+msgstr "Переключить знак закрытия"
+
+#: views/settings.php:271
+msgid "Toggle open sign on front widget while using toggles for sections."
+msgstr "Переключить значок открытия на виджете при использовании переключателей для разделов."
+
+#: views/settings.php:268
+msgid "Toggle open sign"
+msgstr "Переключить знак открытия"
+
+#: views/settings.php:262
+msgid "Will be shown if the searching is not going by default if no panel id is set."
+msgstr "Будет показано выполняется ли поиск по умолчанию, если не задан идентификатор панели."
+
+#: views/settings.php:257
+msgid "No one sort panel created!"
+msgstr "Ни одной панели сортировки не создано!"
+
+#: views/settings.php:227
+msgid "Default sort panel"
+msgstr "Панель сортировки по умолчанию"
+
+#: views/settings.php:221
+msgid "Example: %s,_price. Default order-by of your filtered posts."
+msgstr "Пример: %s, _price. Порядок ваших отфильтрованных сообщений по умолчанию."
+
+#: views/settings.php:210 views/sort_panel/metabox.php:66
+msgid "ASC"
+msgstr "По возрастанию"
+
+#: views/settings.php:209 views/sort_panel/metabox.php:65
+msgid "DESC"
+msgstr "По убыванию"
+
+#: views/settings.php:199 views/sort_panel/metabox.php:82
+msgid "Default order by"
+msgstr "По умолчанию упорядочивать по"
+
+#: views/settings.php:190
+msgid "Example: One Moment ..."
+msgstr "Пример: Один Момент ..."
+
+#: views/settings.php:187
+msgid "Loading text"
+msgstr "Текст загрузки"
+
+#: views/settings.php:175
+msgid "Plainoverlay color"
+msgstr "Plainoverlay цвет"
+
+#: views/settings.php:161
+msgid "Overlay image background"
+msgstr "Наложение фонового изображения"
+
+#: views/settings.php:151
+msgid "Overlay skin while data loading"
+msgstr "Overlay скин при загрузке данных"
+
+#: views/settings.php:137
+msgid "Loading spokes"
+msgstr "Загрузка спиц"
+
+#: views/settings.php:136
+msgid "Loading spinning bubbles"
+msgstr "Загрузка вращающихся пузырей"
+
+#: views/settings.php:135
+msgid "Loading spin"
+msgstr "Загрузка вращения"
+
+#: views/settings.php:134
+msgid "Loading cyclone"
+msgstr "Загрузка циклона"
+
+#: views/settings.php:133
+msgid "Loading cubes"
+msgstr "Загрузка кубиков"
+
+#: views/settings.php:132
+msgid "Loading bubbles"
+msgstr "Загрузка пузырей"
+
+#: views/settings.php:131
+msgid "Loading bars"
+msgstr "Загрузка брусков"
+
+#: views/settings.php:130
+msgid "Loading balls"
+msgstr "Загрузка шаров"
+
+#: views/settings.php:129
+msgid "Plainoverlay"
+msgstr "Plainoverlay"
+
+#: views/settings.php:128 views/settings.php:333
+#: views/sort_panel/select_filter_panel.php:5
+msgid "Default"
+msgstr "По умолчанию"
+
+#: views/settings.php:123
+msgid "Overlay skin"
+msgstr "Overlay скины"
+
+#: views/settings.php:107
+msgid "Leave this field empty if you want to use wordpress or your theme settings."
+msgstr "Оставьте это поле пустым, если вы хотите использовать WordPress настройки или настройки вашей темы."
+
+#: views/settings.php:104
+msgid "Results per page"
+msgstr "Результатов на странице:"
+
+#: views/settings.php:99
+msgid "Leave this field empty if you do not need this. Of course each widget and shortcode has such option too."
+msgstr "Оставьте это поле пустым, если оно вам не нужно. Конечно, такая опция есть у каждого виджета и шорткода."
+
+#: views/settings.php:96
+msgid "Reset custom link"
+msgstr "Пользовательская ссылка сброса"
+
+#: views/settings.php:91
+msgid "Check post types which should be searched"
+msgstr "Проверьте типы постов, которые следует искать"
+
+#: views/settings.php:78 views/settings.php:1369
+msgid "Supported post types"
+msgstr "Поддерживаемые типы постов"
+
+#: views/settings.php:74
+msgid "Output template, search by default. For example: search,archive,content or your custom which is in current wp theme. If you want to set double name template, write it in such manner for example: content-special. If you do not understood - leave search!"
+msgstr "Шаблон вывода, поиск по умолчанию. Например: search,archive,content или ваш шаблон, который находится в текущей теме WP. Если вы хотите установить шаблон двойного имени, напишите его например так: content-special. Если не поняли - оставьте как есть!"
+
+#: views/settings.php:71
+msgid "Output search template"
+msgstr "Шаблон вывода"
+
+#: views/settings.php:67
+msgid "Link to site page where shows searching results"
+msgstr "Ссылка на страницу сайта, где отображаются результаты поиска"
+
+#: views/settings.php:64
+msgid "Search Result Page"
+msgstr "Страница результатов поиска"
+
+#: views/settings.php:55
+msgid "Info"
+msgstr "Информация"
+
+#: views/settings.php:54
+msgid "Advanced options"
+msgstr "Расширенные настройки"
+
+#: views/settings.php:48
+msgid "Messenger"
+msgstr "Мессенджер"
+
+#: views/settings.php:44
+msgid "In-Built Pagination"
+msgstr "Встроенная пагинация"
+
+#: views/settings.php:42
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: views/settings.php:40
+msgid "Miscellaneous"
+msgstr "Разное"
+
+#: views/settings.php:39
+msgid "Front interface"
+msgstr "Интерфейс"
+
+#: views/settings.php:38
+msgid "Main settings"
+msgstr "Основные настройки"
+
+#: views/settings.php:18
+msgid "Watch"
+msgstr "Просмотр"
+
+#: views/settings.php:18
+msgid "Read"
+msgstr "Прочитать"
+
+#: views/settings.php:18 index.php:403
+msgid "MDTF Settings"
+msgstr "MDTF Настройки"
+
+#: views/settings.php:18
+msgid "GET Premium version"
+msgstr "Премиум версия"
+
+#: views/add_item_to_data_group.php:260
+msgid "Set map info in each post you are going to filter. The data will be applyed on the google map."
+msgstr "Установите информацию о карте в каждом посте, который вы собираетесь фильтровать. Данные будут нанесены на карту Google."
+
+#: views/add_item_to_data_group.php:253
+msgid "Example: <b>_price</b>, where <i>_price</i> is reflected meta field key in products of woocommerce.<br /> Reflection synchronizes data with already existing meta keys and makes them searchable!"
+msgstr "Пример: <b>_price</b>, где <i>_price</i> - это отраженный ключ мета-поля в продуктах woocommerce. <br /> Отражение синхронизирует данные с уже существующими мета-ключами и делает их доступными для поиска!"
+
+#: views/add_item_to_data_group.php:246
+msgid "Reflect value from meta key"
+msgstr "Отражать значение из метаключа"
+
+#: views/add_item_to_data_group.php:240
+msgid "meta key must be begin from <b>medafi_</b> prefix, another way you will have problems! If you are using this key somewhere in code be ready to change it there!<br /> Change keys please for saved filter and filters items only, not for new and just created!"
+msgstr "мета-ключ должен начинаться с префикса <b>medafi_</b>, иначе у вас возникнут проблемы! Если вы используете этот ключ где-то в коде, будьте готовы изменить его здесь! <br /> Измените ключи только для сохраненных фильтров и элементов фильтров, а не для новых и только что созданных!"
+
+#: views/add_item_to_data_group.php:240
+msgid "Attention"
+msgstr "Внимание"
+
+#: views/add_item_to_data_group.php:239
+msgid "change meta key"
+msgstr "изменить мета-ключ"
+
+#: views/add_item_to_data_group.php:238
+msgid "Item meta key"
+msgstr "Мета-ключ элемента"
+
+#: views/add_item_to_data_group.php:233
+msgid "Item Description"
+msgstr "Описание элемента"
+
+#: views/add_item_to_data_group.php:227
+msgid "By logic here must be taxonomies constructor. But, to add more flexibility to the plugin,  taxonomies are selected in the widget. So you can use the same group for different post types, or the same post type but different widgets. If there no taxonomies selected in the widget - nothing will appear on front of site in search form of the widget."
+msgstr "По логике здесь должен быть конструктор таксономий. Но, чтобы добавить больше гибкости плагину, в виджете выбираются таксономии. Таким образом, вы можете использовать одну и ту же группу для разных типов постов или один и тот же тип постов, но для разных виджетов. Если в виджете не выбраны таксономии - в поисковой форме виджета ничего не появится."
+
+#: views/add_item_to_data_group.php:219
+msgid "Sort options by alphabetical order on the front"
+msgstr "Варианты сортировки в алфавитном порядке"
+
+#: views/add_item_to_data_group.php:213
+msgid "Sort options by alphabetical order"
+msgstr "Варианты сортировки по алфавиту"
+
+#: views/add_item_to_data_group.php:210
+msgid "Enabling this mode allows you to set 1 decimal value in post for looking it in range. Options of such drop-down must have names as: 0-500, 501-1000, 1001-2000 and etc..."
+msgstr "Включение этого режима позволяет вам установить 1-но десятичное значение в посте для поиска его в диапазоне значений. Опции такого выпадающего списка должны иметь названия: 0-500, 501-1000, 1001-2000 и т. Д."
+
+#: views/add_item_to_data_group.php:204
+msgid "Search inside range."
+msgstr "Ищите внутри диапазона."
+
+#: views/add_item_to_data_group.php:202
+msgid "Append drop-down option"
+msgstr "Добавить раскрывающийся список"
+
+#: views/add_item_to_data_group.php:192
+msgid "drag and drope"
+msgstr "перетаскивать"
+
+#: views/add_item_to_data_group.php:191
+msgid "key for the current option - must be unique"
+msgstr "ключ для текущей опции - должен быть уникальным"
+
+#: views/add_item_to_data_group.php:182
+msgid "Prepend drop-down option"
+msgstr "Добавить в начало селект"
+
+#: views/add_item_to_data_group.php:179
+msgid "Leave this field empty to use defined in widget string: Any"
+msgstr "Оставьте это поле пустым, чтобы использовать значение, указанное в строке виджета: Any"
+
+#: views/add_item_to_data_group.php:177
+msgid "Drop-down first option title"
+msgstr "Надпись в первой опции раскрывающегося списка"
+
+#: views/add_item_to_data_group.php:176
+msgid "enter a digit from 1 to ..."
+msgstr "введите цифру от 1 до ..."
+
+#: views/add_item_to_data_group.php:171
+msgid "jQuery-ui calendar: from - to"
+msgstr "Календарь jQuery-ui: с - по"
+
+#: views/add_item_to_data_group.php:166
+msgid "show as textarea in backend"
+msgstr "показать как текстовое поле в бэкэнде"
+
+#: views/add_item_to_data_group.php:165
+msgid "show as textinput in backend"
+msgstr "показать как textinput в бэкэнд"
+
+#: views/add_item_to_data_group.php:161
+msgid "exact"
+msgstr "точное соответствие"
+
+#: views/add_item_to_data_group.php:160
+msgid "like"
+msgstr "похожее"
+
+#: views/add_item_to_data_group.php:155
+msgid "enter tag"
+msgstr "введите тег"
+
+#: views/add_item_to_data_group.php:151
+msgid "tag"
+msgstr "метка"
+
+#: views/add_item_to_data_group.php:150
+msgid "title and content on the same time"
+msgstr "заголовок и контент одновременно"
+
+#: views/add_item_to_data_group.php:149
+msgid "title or content on the same time"
+msgstr "заголовок или контент одновременно"
+
+#: views/add_item_to_data_group.php:148
+msgid "post content"
+msgstr "размещать контент"
+
+#: views/add_item_to_data_group.php:147
+msgid "post title"
+msgstr "заголовок поста"
+
+#: views/add_item_to_data_group.php:146
+msgid "self"
+msgstr "self"
+
+#: views/add_item_to_data_group.php:143
+msgid "enter placeholder text"
+msgstr "введите текст заполнителя"
+
+#: views/add_item_to_data_group.php:128
+msgid "Show search by author(select)"
+msgstr "Показать поиск по автору (селект)"
+
+#: views/add_item_to_data_group.php:84 views/add_item_to_data_group.php:119
+msgid "Enabling this mode allows you to set more than 1 value in item for range-slider. For example: 34,45,96 - through comma."
+msgstr "Включение этого режима позволяет вам установить более 1 значения в элементе для диапазона ползунка. Например: 34,45,96 - через запятую."
+
+#: views/add_item_to_data_group.php:83 views/add_item_to_data_group.php:118
+msgid "ATTENTION: Do not use it if you do not need!! It takes more resources. Use this mode when you have not a lot of items to filter (about 100)"
+msgstr "ВНИМАНИЕ: Не используйте его, если он вам не нужен!! Требуется больше ресурсов. Используйте этот режим, когда у вас не так много элементов для фильтрации (около 100)."
+
+#: views/add_item_to_data_group.php:77 views/add_item_to_data_group.php:112
+msgid "Is multi value"
+msgstr "Многозначность"
+
+#: views/add_item_to_data_group.php:68 views/add_item_to_data_group.php:103
+msgid "This is woo price, and I want to set range from min price to max price from database"
+msgstr "Это цена woo, и я хочу установить диапазон от минимальной цены до максимальной цены из базы данных"
+
+#: views/add_item_to_data_group.php:63
+msgid "Enabling this mode allows you to set 2 values in post for range-slider - RANGE 'From' and 'To'. Not possible to reflect this. On the front range-slider is single! Doesn work with WooCommerce functionality."
+msgstr "Включение этого режима позволяет вам установить 2 значения в посте для ползунка диапазона - 'От' и 'До'. Невозможно отразить это. Бегунок стоит одиночный! Не работает с функциями WooCommerce."
+
+#: views/add_item_to_data_group.php:57
+msgid "Search inside range"
+msgstr "Поиск внутри диапазона."
+
+#: views/add_item_to_data_group.php:47 views/add_item_to_data_group.php:99
+msgid "Prettify"
+msgstr "Украшательство"
+
+#: views/add_item_to_data_group.php:46 views/add_item_to_data_group.php:98
+msgid "Example: €"
+msgstr "Пример: €"
+
+#: views/add_item_to_data_group.php:45 views/add_item_to_data_group.php:97
+msgid "Postfix"
+msgstr "Постфикс"
+
+#: views/add_item_to_data_group.php:44 views/add_item_to_data_group.php:96
+msgid "Example: $"
+msgstr "Пример: $"
+
+#: views/add_item_to_data_group.php:43 views/add_item_to_data_group.php:95
+msgid "Prefix"
+msgstr "Префикс"
+
+#: views/add_item_to_data_group.php:42 views/add_item_to_data_group.php:94
+msgid "0 or empty mean auto step"
+msgstr "0 или пусто означает автоматический шаг"
+
+#: views/add_item_to_data_group.php:41 views/add_item_to_data_group.php:93
+msgid "Slider step"
+msgstr "Шаг слайдера"
+
+#: views/add_item_to_data_group.php:40 views/add_item_to_data_group.php:92
+#: views/page/draw_back_page_items.php:107
+#: views/page/draw_back_page_items.php:401
+msgid "example"
+msgstr "пример"
+
+#: views/add_item_to_data_group.php:39 views/add_item_to_data_group.php:91
+msgid "From^To"
+msgstr "От^До"
+
+#: views/add_item_to_data_group.php:22
+msgid "Item Type"
+msgstr "Тип элемента"
+
+#: views/add_item_to_data_group.php:19
+msgid "Toggle"
+msgstr "Переключатель"
+
+#: views/add_item_to_data_group.php:15
+msgid "enter item name here"
+msgstr "введите здесь название элемента"
+
+#: views/add_item_to_data_group.php:11
+msgid "Item Name"
+msgstr "Название элемента"
+
+#: views/widgets/post_data_form.php:33
+msgid "Show absent items"
+msgstr "Показать отсутствующие элементы"
+
+#: views/widgets/search_form.php:484
+msgid "Title for Any"
+msgstr "Название для Любого"
+
+#: views/widgets/search_form.php:362
+msgid "To show slugs taxonomies you have to add in selected Meta Data Filter Category a data constructor block of type <b>\"taxonomy\"</b>. It must appear one time only in search form of one widget! Otherwise maybe problems."
+msgstr "Чтобы отобразить слаги таксономий, вы должны добавить в выбранную категорию фильтра метаданных блок конструктора данных типа <b> \"taxonomy\" </b>. Он должен появляться только один раз в поисковой форме одного виджета! Иначе могут быть проблемы."
+
+#: views/widgets/search_form.php:237
+msgid "Show filter button after each block"
+msgstr "Показывать кнопку фильтра после каждого блока"
+
+#: views/widgets/search_form.php:224
+msgid "Hide items where count of items is 0"
+msgstr "Скрыть элементы, у которых количество элементов равно 0"
+
+#: views/widgets/search_form.php:214
+msgid "Dynamic post items recount"
+msgstr "Динамический пересчет постов"
+
+#: views/widgets/search_form.php:201
+msgid "Show count of posts in range slider"
+msgstr "Показывать количество постов в ползунке диапазона"
+
+#: views/widgets/search_form.php:188
+msgid "Show count of posts in select option"
+msgstr "Показать количество постов в опциях селекта"
+
+#: views/widgets/search_form.php:176
+msgid "Show near checkbox count of posts"
+msgstr "Показывать рядом с чекбоксом количество сообщений"
+
+#: views/widgets/search_form.php:151
+msgid "AND/OR behaviour for meta filelds"
+msgstr "И / ИЛИ поведение для мета полей"
+
+#: views/widgets/search_form.php:147
+msgid "Meta options"
+msgstr "Мета опции"
+
+#: views/widgets/search_form.php:104
+msgid "Hide taxonomies values filter options"
+msgstr "Скрыть параметры фильтра значений таксономий"
+
+#: views/widgets/search_form.php:91
+msgid "Hide meta values filter options necessarily if you are going to filter by taxonomies <b>only</b>!"
+msgstr "Если вы собираетесь фильтровать по таксономиям <b>только</b>, обязательно скройте параметры фильтрации метаданных!"
+
+#: views/widgets/search_form.php:90
+msgid "Hide meta values filter options"
+msgstr "Скрыть параметры фильтра мета-значений"
+
+#: views/widgets/search_form.php:56
+msgid "You can check more filter categories to enable changing of it on front!"
+msgstr "Вы можете отметить другие категории фильтров!"
+
+#: views/widgets/search_form.php:25
+msgid "select category"
+msgstr "выбрать категорию"
+
+#: views/widgets/search_form.php:16
+msgid "Meta Data Filter Category"
+msgstr "Meta Data Filter Категория"
+
+#: views/widgets/search_form/popup_terms_list.php:108
+msgid "Post Count"
+msgstr "Количество постов"
+
+#: views/widgets/search_form/popup_terms_list.php:107
+msgid "Name"
+msgstr "Название"
+
+#: views/widgets/search_form/popup_terms_list.php:65
+msgid "How to use toggle with the current taxonomy block"
+msgstr "Как использовать переключатель с текущим блоком таксономии"
+
+#: views/widgets/search_form/popup_terms_list.php:53 index.php:914
+msgid "Closed"
+msgstr "Закрыто"
+
+#: views/widgets/search_form/popup_terms_list.php:52 index.php:913
+msgid "Opened"
+msgstr "Открыто"
+
+#: views/widgets/search_form/popup_terms_list.php:51 index.php:912
+msgid "No toogle"
+msgstr "Нет переключения"
+
+#: views/widgets/search_form/popup_terms_list.php:43
+msgid "Use this option if you are using title like Country^Region^City"
+msgstr "Используйте эту опцию, если вы используете заголовок, например Страна^Регион^Город"
+
+#: views/widgets/search_form/popup_terms_list.php:36
+#: views/widgets/search_form/popup_terms_list.php:40
+msgid "Show all child terms at once below"
+msgstr "Показать сразу все дочерние тёрмы ниже"
+
+#: views/widgets/search_form/popup_terms_list.php:23
+msgid "Set 0 if you do not want to set max-height for this taxonomy"
+msgstr "Установите 0, если вы не хотите устанавливать максимальную высоту для этой таксономии."
+
+#: views/widgets/search_form/popup_terms_list.php:22
+msgid "Block max height"
+msgstr "Максимальная высота блока"
+
+#: views/widgets/search_form/popup_terms_list.php:19
+#: views/add_item_to_data_group.php:175
+msgid "Drop-down size"
+msgstr "Размер селекта"
+
+#: views/widgets/search_form/popup_terms_list.php:16
+msgid "Leave this field empty to show taxonomy name as title. Use syntax like: <b>Country^Region^City</b> to display parents and childs with another titles in first drop-down option."
+msgstr "Оставьте это поле пустым, чтобы в качестве заголовка отображалось название таксономии. Используйте синтаксис, например: <b>Страна^Регион^Город</b>, чтобы отобразить родителей и потомков с другими заголовками в первом раскрывающемся списке."
+
+#: views/widgets/search_form/popup_terms_list.php:15
+msgid "Custom name/title for taxonomies"
+msgstr "Пользовательское имя / заголовок для таксономий"
+
+#: views/widgets/search_form/popup_terms_list.php:12
+msgid "Show as"
+msgstr "Показать как"
+
+#: views/widgets/search_form/popup_terms_list.php:2
+msgid "Terms items of \"%s\""
+msgstr "Тёрмы \"%s\""
+
+#: views/widgets/search_form_tax.php:300 views/widgets/search_form.php:489
+msgid "Title for filter button"
+msgstr "Заголовок для кнопки фильтра"
+
+#: views/widgets/search_form_tax.php:266 views/widgets/search_form.php:464
+msgid "AJAX items recount"
+msgstr "Пересчет элементов AJAX"
+
+#: views/widgets/search_form_tax.php:255 views/widgets/search_form.php:452
+msgid "Auto submit form"
+msgstr "Автоматическая форма"
+
+#: views/widgets/search_form_tax.php:229 views/widgets/search_form.php:421
+msgid "Hide terms where count of items is 0"
+msgstr "Скрыть тёрмы, в которых количество элементов равно 0"
+
+#: views/widgets/search_form_tax.php:220 views/widgets/search_form.php:412
+msgid "Dynamic post recount"
+msgstr "Динамический пересчет постов"
+
+#: views/widgets/search_form_tax.php:206 views/widgets/search_form.php:397
+msgid "Show count of posts/custom"
+msgstr "Показать количество постов"
+
+#: views/widgets/search_form_tax.php:187 views/widgets/search_form.php:155
+#: views/widgets/search_form.php:377 views/widgets/search.php:150
+msgid "OR"
+msgstr "ИЛИ"
+
+#: views/widgets/search_form_tax.php:186 views/widgets/search_form.php:154
+#: views/widgets/search_form.php:376 views/widgets/search.php:152
+msgid "AND"
+msgstr "И"
+
+#: views/widgets/search_form_tax.php:183 views/widgets/search_form.php:373
+msgid "AND/OR behaviour for taxonomies"
+msgstr "Поведение И / ИЛИ для таксономий"
+
+#: views/widgets/search_form_tax.php:177 views/widgets/search_form.php:367
+msgid "No Taxonomies exists for selected slug"
+msgstr "Для выбранного слага не существует таксономии"
+
+#: views/widgets/search_form_tax.php:162 views/widgets/search_form.php:350
+msgid "Options"
+msgstr "Настройки"
+
+#: views/widgets/search_form_tax.php:73 views/widgets/search_form.php:247
+msgid "Taxonomies for the selected slug"
+msgstr "Таксономии для выбранного слага"
+
+#: views/widgets/search_form_tax.php:53 views/widgets/search_form.php:130
+msgid "Example: Found &lt;span&gt;%s&lt;/span&gt; items"
+msgstr "Пример: Найдено &lt;span&gt;%s&lt;/span&gt; элементов"
+
+#: views/widgets/search_form_tax.php:45 views/widgets/search_form.php:122
+msgid "Custom reset link/url"
+msgstr "Ссылка для пользовательского сброса"
+
+#: views/widgets/search_form_tax.php:34 views/widgets/search_form_tax.php:41
+#: views/widgets/search_form_tax.php:47 views/widgets/search_form.php:111
+#: views/widgets/search_form.php:118 views/widgets/search_form.php:124
+msgid "Leave this field empty if you want to use the default value from settings"
+msgstr "Оставьте это поле пустым, если вы хотите использовать значение по умолчанию из настроек"
+
+#: views/widgets/search_form_tax.php:14 views/widgets/search_form.php:63
+#: views/widgets/post_data_form.php:8
+msgid "Slug"
+msgstr "Слаг"
+
+#: views/data_meta_box.php:18
+msgid "Append Filter Item"
+msgstr "Добавить элемент фильтра в конец"
+
+#: views/data_meta_box.php:3
+msgid "Prepend Filter Item"
+msgstr "Добавить элемент фильтра в начало"
+
+#: views/marketing/settings.php:36
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: views/marketing/settings.php:27
+msgid "If no one prefix in settings, you can use default prefix <b>mdf</b> only."
+msgstr "Если в настройках нет префикса, можно использовать только префикс по умолчанию <b>mdf</b>."
+
+#: views/marketing/settings.php:26
+msgid "Example: http://site.net/<b>mdf</b>/192/man-jackets - <b>mdf</b> is prefix. You can create unlimited count of them. But be careful with such words as <b>category</b> or something from wordpress!"
+msgstr "Пример: http://site.net/<b>mdf</b>/192/man-jackets - <b>mdf</b> - это префикс. Вы можете создавать их неограниченное количество. Но будьте осторожны с такими словами, как <b>category</b> или что-нибудь из WordPress!"
+
+#: views/marketing/settings.php:16
+msgid "Add link prefix"
+msgstr "Добавить префикс ссылки"
+
+#: views/marketing/settings.php:14
+msgid "Links prefixes"
+msgstr "Префиксы ссылок"
+
+#: views/marketing/settings.php:6 views/settings.php:30
+msgid "Settings are saved."
+msgstr "Настройки сохранены."
+
+#: views/marketing/settings.php:3
+msgid "MDTF Marketing Links Settings"
+msgstr "Настройки маркетинговых ссылок MDTF"
+
+#: views/marketing/metabox.php:30
+msgid "Link SEO suffix"
+msgstr "Суффикс ссылки SEO"
+
+#: views/marketing/metabox.php:16
+msgid "Link SEO prefix"
+msgstr "Префикс ссылки SEO"
+
+#: views/const_links/metabox.php:40
+msgid "ALL IS OK"
+msgstr "ВСЕ В ПОРЯДКЕ"
+
+#: views/const_links/metabox.php:33
+msgid "Link is inspired. Recreate this one on the front on the same browser!"
+msgstr "Ссылка внедрена. Воссоздайте это на сайте в том же браузере!"
+
+#: views/const_links/metabox.php:30
+msgid "ATTENTION"
+msgstr "ВНИМАНИЕ"
+
+#: views/const_links/metabox.php:21
+msgid "Drop here right link only for updating constant link!!"
+msgstr "Перетащите сюда правую ссылку только для обновления постоянной ссылки !!"
+
+#: views/const_links/metabox.php:18
+msgid "Drop new link here"
+msgstr "Перетащите новую ссылку сюда"
+
+#: views/const_links/metabox.php:8
+msgid "Use this link on your site"
+msgstr "Используйте эту ссылку на своем сайте"
+
+#: views/shortcode/options_meta_box_html_items.php:33
+msgid "Range"
+msgstr "Диапазон"
+
+#: views/shortcode/options_meta_box_html_items.php:30
+msgid "Type"
+msgstr "Тип"
+
+#: views/shortcode/options_meta_box_html_items.php:23
+#: views/page/draw_back_page_items.php:46
+#: views/page/draw_back_page_items.php:141
+#: views/page/draw_back_page_items.php:187
+#: views/page/draw_back_page_items.php:234
+#: views/page/draw_back_page_items.php:311
+#: views/page/draw_back_page_items.php:366
+#: views/page/draw_back_page_items.php:446
+msgid "is reflected by %s"
+msgstr "отражен от %s"
+
+#: views/shortcode/options_meta_box_html_items.php:7
+#: views/shortcode/options_meta_box_html_items.php:36
+#: views/widgets/search_form/popup_terms_list.php:109
+msgid "Hide"
+msgstr "Скрыть"
+
+#: views/shortcode/options_meta_box.php:275
+msgid "Shortcode front skin"
+msgstr "Шорткод скина"
+
+#: views/shortcode/options_meta_box.php:266
+#: views/widgets/search_form_tax.php:294 views/widgets/search_form.php:496
+msgid "Sort panel"
+msgstr "Панель сортировки"
+
+#: views/shortcode/options_meta_box.php:256
+#: views/widgets/search_form_tax.php:287 views/widgets/search_form.php:505
+msgid "Syntax is"
+msgstr "Синтаксис"
+
+#: views/shortcode/options_meta_box.php:256
+#: views/widgets/search_form_tax.php:287 views/widgets/search_form.php:505
+#: views/settings.php:163 index.php:937
+msgid "Example"
+msgstr "Пример"
+
+#: views/shortcode/options_meta_box.php:253
+#: views/widgets/search_form_tax.php:285 views/widgets/search_form.php:503
+msgid "Additional taxonomies conditions"
+msgstr "Дополнительные условия таксономий"
+
+#: views/shortcode/options_meta_box.php:244
+msgid "exluded terms ids for %s. Example: 11,22,33"
+msgstr "исключенные тёрмы для %s. Пример: 11,22,33"
+
+#: views/shortcode/options_meta_box.php:240
+msgid "All childs below"
+msgstr "Все подкатегории ниже"
+
+#: views/shortcode/options_meta_box.php:239
+msgid "One child below"
+msgstr "Один подкатегория ниже"
+
+#: views/shortcode/options_meta_box.php:224
+#: views/widgets/search_form/popup_terms_list.php:7
+msgid "Multiple checkbox select"
+msgstr "Выбор нескольких чекбоксов"
+
+#: views/shortcode/options_meta_box.php:216
+msgid "block max-height"
+msgstr "максимальная высота блока"
+
+#: views/shortcode/options_meta_box.php:215
+msgid "taxonomy custom title"
+msgstr "Пользовательский ярлык таксономии"
+
+#: views/shortcode/options_meta_box.php:172
+#: views/widgets/search_form_tax.php:69 views/widgets/search_form.php:243
+msgid "Taxonomies options"
+msgstr "Варианты таксономии"
+
+#: views/shortcode/options_meta_box.php:160
+msgid "To manage by taxonomies of the selected post type you should press Update button!"
+msgstr "Для управления по таксономиям выбранного типа поста необходимо нажать кнопку «Обновить»!"
+
+#: views/shortcode/options_meta_box.php:151
+msgid "Post type"
+msgstr "Тип поста"
+
+#: views/shortcode/options_meta_box.php:145
+msgid "Filter button text"
+msgstr "Текст кнопки фильтра"
+
+#: views/shortcode/options_meta_box.php:138
+#: views/widgets/search_form_tax.php:64 views/widgets/search_form.php:142
+msgid "Show found items count text"
+msgstr "Показать текст-количество найденных элементов"
+
+#: views/shortcode/options_meta_box.php:131
+#: views/widgets/search_form_tax.php:241 views/widgets/search_form.php:436
+msgid "Show reset button"
+msgstr "Показать кнопку сброса"
+
+#: views/shortcode/options_meta_box.php:123
+msgid "Hide items where count is 0"
+msgstr "Скрыть элементы, у которых количество элементов равно 0"
+
+#: views/shortcode/options_meta_box.php:116
+msgid "Show count"
+msgstr "Показать количество"
+
+#: views/shortcode/options_meta_box.php:112
+msgid "To use this option please uncheck \"Auto submit\" and check \"AJAX Auto recount\""
+msgstr "Чтобы использовать эту опцию, снимите флажок «Автоотправка» и установите флажок «Автоматический пересчет AJAX»."
+
+#: views/shortcode/options_meta_box.php:108
+#: views/widgets/search_form_tax.php:278 views/widgets/search_form.php:477
+msgid "AJAX items output"
+msgstr "Вывод элементов посредством AJAX"
+
+#: views/shortcode/options_meta_box.php:104
+msgid "To use this option please uncheck \"Auto submit\". Use it to stay on the same page and see results filtered by AJAX."
+msgstr "Чтобы использовать эту опцию, снимите флажок «Автоматическая отправка». Используйте его, чтобы оставаться на той же странице и просматривать результаты, отфильтрованные с помощью AJAX."
+
+#: views/shortcode/options_meta_box.php:100
+msgid "AJAX Auto recount"
+msgstr "Автоматический пересчет посредством AJAX"
+
+#: views/shortcode/options_meta_box.php:93
+msgid "Auto submit"
+msgstr "Автоотправка"
+
+#: views/shortcode/options_meta_box.php:89
+msgid "Custom reset link. Leave this field empty to reset the form inputs ONLY by ajax."
+msgstr "Ссылка для пользовательского сброса. Оставьте это поле пустым, чтобы сбросить входные данные формы ТОЛЬКО с помощью ajax."
+
+#: views/shortcode/options_meta_box.php:87
+msgid "Custom reset link"
+msgstr "Ссылка для пользовательского сброса"
+
+#: views/shortcode/options_meta_box.php:83
+msgid "Example: Found &lt;span&gt;%s&lt;/span&gt; items. Premium version!"
+msgstr "Пример: найдено &lt;span&gt;%s&lt;/span&gt; элементов. Премиум версия!"
+
+#: views/shortcode/options_meta_box.php:81 views/widgets/search_form_tax.php:51
+#: views/widgets/search_form.php:128
+msgid "Custom text for search results"
+msgstr "Пользовательский текст для результатов поиска"
+
+#: views/shortcode/options_meta_box.php:75 views/widgets/search_form_tax.php:39
+#: views/widgets/search_form.php:116
+msgid "Results output template"
+msgstr "Шаблон вывода результатов"
+
+#: views/shortcode/options_meta_box.php:71
+#: views/shortcode/options_meta_box.php:77
+msgid "leave this field empty to use output page from the plugin settings"
+msgstr "оставьте это поле пустым, чтобы использовать страницу вывода из настроек плагина"
+
+#: views/shortcode/options_meta_box.php:69 views/widgets/search_form_tax.php:32
+#: views/widgets/search_form.php:109
+msgid "Results output page link"
+msgstr "Ссылка на страницу вывода результатов"
+
+#: views/shortcode/options_meta_box.php:65
+msgid "Check this if you want to make searching by title/content in all posts of the selected post type slug!"
+msgstr "Установите этот флажок, если вы хотите выполнять поиск по заголовку / содержанию во всех постах выбранного типа!"
+
+#: views/shortcode/options_meta_box.php:61
+msgid "Ignore filter-category in wp_query"
+msgstr "Игнорировать категорию фильтра в wp_query"
+
+#: views/shortcode/options_meta_box.php:54
+msgid "Taxomies only in filter"
+msgstr "Только таксономии в фильтре"
+
+#: views/shortcode/options_meta_box.php:48
+msgid "Shortcode options"
+msgstr "Настройки шорткода"
+
+#: views/shortcode/options_meta_box.php:26
+msgid "No one filter MDTF Category created!"
+msgstr "Нет ни одного фильтра MDTF-Категории не создано!"
+
+#: views/shortcode/options_meta_box.php:6
+#: views/shortcode/options_meta_box.php:15
+msgid "Select filter category"
+msgstr "Выберите категорию фильтра"
+
+#: views/shortcode/do_mdf_search_form.php:968 views/widgets/search.php:237
+msgid "Reset"
+msgstr "Сброс"
+
+#: views/shortcode/do_mdf_search_form.php:878
+#: views/page/draw_front_page_items.php:809 index.php:1772
+msgid "no available items"
+msgstr "нет доступных элементов"
+
+#: views/shortcode/do_mdf_search_form.php:528
+#: views/page/draw_back_page_items.php:79
+#: views/page/draw_back_page_items.php:332
+#: views/page/draw_front_page_items.php:674
+msgid "to"
+msgstr "к"
+
+#: views/shortcode/do_mdf_search_form.php:525
+#: views/page/draw_back_page_items.php:78
+#: views/page/draw_back_page_items.php:329
+#: views/page/draw_front_page_items.php:671
+msgid "from"
+msgstr "от"
+
+#: views/shortcode/do_mdf_search_form.php:351
+#: views/page/draw_front_page_items.php:454
+msgid "Select author"
+msgstr "Выбрать автора"
+
+#: views/shortcode/do_mdf_search_form.php:43 views/widgets/search.php:121
+msgid "Found <span>%s</span> items"
+msgstr "Найдено <span>%s</span> элементов"
+
+#: views/shortcode/post_features_panel.php:42
+#: views/shortcode/post_features_panel.php:168
+msgid " - to:"
+msgstr " - к:"
+
+#: classes/shortcodes.php:1063
+msgid "shortcode data is not full: post_id, meta_key"
+msgstr "данные шорткода не заполнены: post_id, meta_key"
+
+#: classes/shortcodes.php:973
+msgid "No items found"
+msgstr "Ничего не найдено."
+
+#: classes/shortcodes.php:831
+msgid "Please set template option in shortcode!"
+msgstr "Пожалуйста, установите опцию шаблона в шорткоде!"
+
+#: classes/shortcodes.php:509
+msgid "Load more"
+msgstr "Загрузить еще"
+
+#: classes/shortcodes.php:346
+msgid "Shortcode with ID %s doesn exists"
+msgstr "Шорткод с идентификатором %s не существует"
+
+#: classes/shortcodes.php:226
+msgid "This shortcode does not exists!"
+msgstr "Этот шорткод не существует!"
+
+#: classes/shortcodes.php:106
+msgid "Button Shortcode"
+msgstr "Шорткод кнопки"
+
+#: classes/shortcodes.php:96
+msgid "<b>Button shortcode</b>"
+msgstr "<b>Шорткод кнопки</b>"
+
+#: classes/shortcodes.php:91
+msgid "<b>Search form shortcode</b>"
+msgstr "<b>Шорткод формы поиска</b>"
+
+#: classes/shortcodes.php:85 classes/shortcodes.php:105
+msgid "Shortcode"
+msgstr "Шорткод"
+
+#: classes/shortcodes.php:84
+msgid "MDTF Shortcode Options"
+msgstr "MDTF Параметры шорткода"
+
+#: classes/shortcodes.php:23
+msgid "No Shortcodes found in Trash"
+msgstr "В корзине шорткодов не найдено"
+
+#: classes/shortcodes.php:22
+msgid "No Shortcodes found"
+msgstr "Шорткоды не найдены."
+
+#: classes/shortcodes.php:21
+msgid "Search Shortcodes"
+msgstr "Шорткоды поиска"
+
+#: classes/shortcodes.php:20
+msgid "View Shortcode"
+msgstr "Просмотр шорткода"
+
+#: classes/shortcodes.php:19
+msgid "New Shortcode"
+msgstr "Новый шорткод"
+
+#: classes/shortcodes.php:18
+msgid "Edit Shortcode"
+msgstr "Редактировать шорткод"
+
+#: classes/shortcodes.php:16 classes/shortcodes.php:17
+msgid "Add New Shortcode"
+msgstr "Новый шорткод"
+
+#: classes/shortcodes.php:15
+msgid "Shortcodes Links"
+msgstr "Ссылки шорткодов"
+
+#: classes/shortcodes.php:14
+msgid "MDTF Shortcodes"
+msgstr "Шорткоды MDTF"
+
+#: classes/page.php:27 index.php:814
+msgid "Meta Data Filter Options"
+msgstr "Параметры фильтра метаданных"
+
+#: classes/widgets.php:300
+msgid "Single Post Meta Data"
+msgstr "Мета-данные одного поста"
+
+#: classes/widgets.php:269
+msgid "MDTF single post data"
+msgstr "Данные MDTF поста"
+
+#: classes/widgets.php:267
+msgid "MDTF single page"
+msgstr "Данные MDTF страницы"
+
+#: classes/widgets.php:209
+msgid "MDTF Taxonomies"
+msgstr "MDTF Таксономии"
+
+#: classes/widgets.php:140
+msgid "MDTF Taxonomies - search and filter data by taxonomies only."
+msgstr "MDTF Таксономии - поиск и фильтрация данных только по таксономиям."
+
+#: classes/widgets.php:138
+msgid "MDTF Taxonomies only"
+msgstr "MDTF Таксономии только"
+
+#: classes/widgets.php:115 classes/widgets.php:242
+msgid "Found &lt;span&gt;%s&lt;/span&gt; items"
+msgstr "Найдено &lt;span&gt;%s&lt;/span&gt; элементов"
+
+#: classes/widgets.php:95 classes/widgets.php:222
+#: views/shortcode/do_mdf_search_form.php:941
+#: views/shortcode/do_mdf_search_form.php:943 views/widgets/search.php:208
+#: views/page/draw_front_page_items.php:829
+msgid "Filter"
+msgstr "Фильтровать"
+
+#: classes/widgets.php:94 classes/widgets.php:221
+#: views/shortcode/do_mdf_search_form.php:373
+#: views/add_item_to_data_group.php:178
+msgid "Any"
+msgstr "Любой"
+
+#: classes/widgets.php:82
+msgid "Meta Data Filter"
+msgstr "Meta Data Filter"
+
+#: classes/widgets.php:13
+msgid "Meta Data Filter - search and filter data by taxonomies and meta fileds."
+msgstr "Meta Data Filter - поиск и фильтрация данных по таксономиям и метаполям."
+
+#: classes/widgets.php:11
+msgid "MDTF"
+msgstr "MDTF"
+
+#: classes/html.php:21
+msgid "map"
+msgstr "карта"
+
+#: classes/html.php:20
+msgid "Search by author"
+msgstr "Поиск по автору"
+
+#: classes/html.php:19 classes/html.php:27 views/settings.php:790
+msgid "Label"
+msgstr "Ярлык"
+
+#: classes/html.php:18
+msgid "Range select"
+msgstr "Выпадающий список диапазона"
+
+#: classes/html.php:17
+msgid "calendar"
+msgstr "календарь"
+
+#: classes/html.php:16
+msgid "textinput"
+msgstr "textinput"
+
+#: classes/html.php:15
+msgid "taxonomy"
+msgstr "таксономия"
+
+#: classes/html.php:14
+msgid "range slider"
+msgstr "ползунок диапазона"
+
+#: classes/html.php:13 classes/html.php:25
+msgid "drop-down"
+msgstr "Селект"
+
+#: classes/html.php:12 classes/html.php:26
+msgid "checkbox"
+msgstr "чекбокс"
+
+#: js/js_vars.php:60 index.php:2055
+msgid "Updated"
+msgstr "Обновлено"
+
+#: js/js_vars.php:59
+msgid "no ui sliders in selected mdf category"
+msgstr "нет ползунков пользовательского интерфейса в выбранной категории mdf"
+
+#: js/js_vars.php:14
+msgid "Apply"
+msgstr "Применить"
+
+#: js/js_vars.php:13
+msgid "Close"
+msgstr "Закрыть"
+
+#: js/js_vars.php:12
+msgid "Cancel"
+msgstr "Отмена"
+
+#: js/js_vars.php:11
+msgid "Loading ..."
+msgstr "Загрузка ..."
+
+#: js/js_vars.php:10 index.php:853
+msgid "One Moment ..."
+msgstr "Один момент ..."
+
+#: ext/mdf_stat/index.php:1193 ext/mdf_stat/index.php:1195
+msgid "To:"
+msgstr "К:"
+
+#: ext/mdf_stat/index.php:1157 ext/mdf_stat/index.php:1167
+#: ext/mdf_stat/index.php:1182
+msgid "From:%s to: %s"
+msgstr "От:%s до: %s"
+
+#: ext/mdf_stat/index.php:1134 ext/mdf_stat/index.php:1142
+#: views/widgets/search_form/popup_terms_list.php:34
+#: views/add_item_to_data_group.php:51 views/add_item_to_data_group.php:60
+#: views/add_item_to_data_group.php:71 views/add_item_to_data_group.php:80
+#: views/add_item_to_data_group.php:106 views/add_item_to_data_group.php:115
+#: views/add_item_to_data_group.php:207 views/add_item_to_data_group.php:216
+#: views/settings.php:806 views/settings.php:1014 views/settings.php:1108
+#: index.php:926
+msgid "No"
+msgstr "Нет"
+
+#: ext/mdf_stat/index.php:1132 ext/mdf_stat/index.php:1140
+#: views/widgets/search_form/popup_terms_list.php:35
+#: views/add_item_to_data_group.php:50 views/add_item_to_data_group.php:61
+#: views/add_item_to_data_group.php:72 views/add_item_to_data_group.php:81
+#: views/add_item_to_data_group.php:107 views/add_item_to_data_group.php:116
+#: views/add_item_to_data_group.php:208 views/add_item_to_data_group.php:217
+#: views/settings.php:1015 views/settings.php:1109 index.php:927
+msgid "Yes"
+msgstr "Да"
+
+#: ext/mdf_stat/index.php:697
+msgid "Wrong data for \"<b>Server options for statistic stock</b>\" options. Please fill right data AND click \"Check DB connection\" button and if all right Save the plugin options."
+msgstr "Неверные данные для параметров «<b>Параметры сервера статистики</b>». Пожалуйста, заполните правильные данные и нажмите кнопку «Проверить соединение с БД» и, если все в порядке, сохраните параметры плагина."
+
+#: ext/mdf_stat/index.php:675
+msgid "Very recommend for the statistic not less than %s of the memory to avoid malfunctionality. Now is on the site %s"
+msgstr "Очень рекомендуется для статистики не менее %s памяти, чтобы избежать сбоев. Сейчас на сайте %s"
+
+#: ext/mdf_stat/index.php:664
+msgid "PHP extension PDO_MYSQL is not enabled on your server, not possible to collect statistic data! Contact your hosting support to about enabling PDO_MYSQL."
+msgstr "Расширение PHP PDO_MYSQL не включено на вашем сервере, невозможно собирать статистические данные! Свяжитесь со службой поддержки вашего хостинга, чтобы узнать о включении PDO_MYSQL."
+
+#: ext/mdf_stat/index.php:647
+msgid "No data for the selected time period!"
+msgstr "Нет данных за выбранный период!"
+
+#: ext/mdf_stat/index.php:646
+msgid "done!"
+msgstr "сделано!"
+
+#: ext/mdf_stat/index.php:645
+msgid "getting the data from the table"
+msgstr "получение данных из таблицы"
+
+#: ext/mdf_stat/index.php:644
+msgid "operative tables are prepared"
+msgstr "оперативные таблицы подготовлены"
+
+#: ext/mdf_stat/index.php:643
+msgid "getting of operative tables ..."
+msgstr "получение оперативных таблиц ..."
+
+#: ext/mdf_stat/index.php:642
+msgid "Statistic calculation ..."
+msgstr "Статистический расчет ..."
+
+#: ext/mdf_stat/index.php:641
+msgid "Select date range for statistic!"
+msgstr "Выберите диапазон дат для статистики!"
+
+#: ext/mdf_stat/index.php:640
+msgid "leave it empty to see all terms"
+msgstr "оставьте поле пустым, чтобы увидеть все тёрмы"
+
+#: ext/mdf_stat/index.php:145
+msgid "Database successfully connected!!!"
+msgstr "База данных успешно подключена !!!"
+
+#: ext/mdf_stat/index.php:141
+msgid "Database not connected!    ERROR! "
+msgstr "База данных не подключена! ОШИБКА!"
+
+#: ext/mdf_stat/views/draw_tax_and_meta_var.php:36
+msgid "Meta keys"
+msgstr "Мета-ключи"
+
+#: ext/mdf_stat/views/draw_tax_and_meta_var.php:21
+msgid "Taxonomies"
+msgstr "Таксономии"
+
+#: ext/mdf_stat/views/tabs_content.php:601
+msgid "Looks like troubles with JavaScript!"
+msgstr "Похоже проблемы с JavaScript!"
+
+#: ext/mdf_stat/views/tabs_content.php:598
+msgid "finished!"
+msgstr "законченно!"
+
+#: ext/mdf_stat/views/tabs_content.php:515
+msgid "drawing graphs ..."
+msgstr "рисование графиков ..."
+
+#: ext/mdf_stat/views/tabs_content.php:494
+msgid "Google charts library not loaded! If site is on localhost just disable statistic extension in tab Extensions!"
+msgstr "Библиотека графиков Google не загружена! Если сайт находится на локальном хосте, просто отключите статистическое расширение во вкладке Расширения!"
+
+#: ext/mdf_stat/views/tabs_content.php:371
+#: ext/mdf_stat/views/tabs_content.php:392
+msgid "MDTF cannot create database table for statistic! Make sure that your mysql user has the CREATE privilege! Do it manually using your host panel&amp;phpmyadmin!"
+msgstr "MDTF не может создать таблицу в базе данных для статистики! Убедитесь, что ваш пользователь mysql имеет доступ CREATE! Сделайте это вручную через вашу хост-панель и phpmyadmin!"
+
+#: ext/mdf_stat/views/tabs_content.php:335
+msgid "xxx"
+msgstr "xxx"
+
+#: ext/mdf_stat/views/tabs_content.php:326
+msgid "Print Graphs"
+msgstr "Вывести графики"
+
+#: ext/mdf_stat/views/tabs_content.php:319
+msgid "Graphics:"
+msgstr "Графики:"
+
+#: ext/mdf_stat/views/tabs_content.php:314
+msgid "Select taxonomy(-ies) and/or meta_data (combination) OR leave this field empty to see general data for all the most requested taxonomies"
+msgstr "Выберите таксономию и/или мета данные(комбинация), ИЛИ оставьте это поле пустым, чтобы увидеть общие данные для всех наиболее востребованных таксономий."
+
+#: ext/mdf_stat/views/tabs_content.php:313
+msgid "Calculate Statistics"
+msgstr "Рассчитать статистику"
+
+#: ext/mdf_stat/views/tabs_content.php:311
+msgid "Choose post type in the statistics settings!"
+msgstr "Выберите тип поста в настройках статистики!"
+
+#: ext/mdf_stat/views/tabs_content.php:294
+msgid "Statistical parameters:"
+msgstr "Статистические параметры:"
+
+#: ext/mdf_stat/views/tabs_content.php:289
+msgid "Select the time period for which you want to see statistical data"
+msgstr "Выберите период времени, за который вы хотите просмотреть статистические данные"
+
+#: ext/mdf_stat/views/tabs_content.php:286
+msgid "To"
+msgstr "К"
+
+#: ext/mdf_stat/views/tabs_content.php:283
+msgid "From"
+msgstr "От"
+
+#: ext/mdf_stat/views/tabs_content.php:279
+msgid "(Statistic collected from: %s %d)"
+msgstr "(Статистика получена: %s %d)"
+
+#: ext/mdf_stat/views/tabs_content.php:276
+msgid "Select period:"
+msgstr "Выберите период:"
+
+#: ext/mdf_stat/views/tabs_content.php:270
+msgid "How many taxonomies and terms to show on the graphs. Use no more than 10 to understand situation with statistical data"
+msgstr "Сколько таксономий и тёрмов отображать на графиках. Используйте не более 10, чтобы понять ситуацию со статистическими данными"
+
+#: ext/mdf_stat/views/tabs_content.php:258
+msgid "Max terms or taxonomies per graph"
+msgstr "Максимальное количество тёрмов и таксономий на график"
+
+#: ext/mdf_stat/views/tabs_content.php:253
+msgid "12 hours recommended"
+msgstr "Рекомендуется 12 часов"
+
+#: ext/mdf_stat/views/tabs_content.php:238 views/settings.php:812
+msgid "monthly"
+msgstr "ежемесячно"
+
+#: ext/mdf_stat/views/tabs_content.php:237 views/settings.php:810
+msgid "weekly"
+msgstr "еженедельно"
+
+#: ext/mdf_stat/views/tabs_content.php:236 views/settings.php:809
+msgid "daily"
+msgstr "ежедневно"
+
+#: ext/mdf_stat/views/tabs_content.php:235 views/settings.php:808
+msgid "twicedaily"
+msgstr "дважды в день"
+
+#: ext/mdf_stat/views/tabs_content.php:234 views/settings.php:807
+msgid "hourly"
+msgstr "ежечасно"
+
+#: ext/mdf_stat/views/tabs_content.php:230
+msgid "WordPress Cron period"
+msgstr "Период WordPress Cron"
+
+#: ext/mdf_stat/views/tabs_content.php:224
+msgid "Enter any random text in the field and use it in the external cron with link like: %s"
+msgstr "Введите произвольный текст в поле и используйте его во внешнем cron со ссылкой, например: %s"
+
+#: ext/mdf_stat/views/tabs_content.php:214
+msgid "Secret key for external cron"
+msgstr "Секретный ключ для внешнего cron"
+
+#: ext/mdf_stat/views/tabs_content.php:209
+msgid "Use WordPress Cron if your site has a lot of traffic, and external cron if the site traffic is not big. External cron is more predictable with time of execution, but additional knowledge how to set it correctly is required (<i style=\"color: orange;\">External cron will be ready in the next version of the extension</i>)"
+msgstr "Используйте WordPress Cron, если у вашего сайта большой трафик, и внешний cron, если трафик сайта небольшой. Внешний cron более предсказуем по времени выполнения, но требуются дополнительные знания, как его правильно установить (<i style=\"color: orange;\">Внешний cron будет готов в следующей версии расширения </i>)"
+
+#: ext/mdf_stat/views/tabs_content.php:195
+msgid "External Cron"
+msgstr "Внешний Cron"
+
+#: ext/mdf_stat/views/tabs_content.php:194
+msgid "WordPress Cron"
+msgstr "WordPress Cron"
+
+#: ext/mdf_stat/views/tabs_content.php:190
+msgid "How to assemble statistic"
+msgstr "Как собрать статистику"
+
+#: ext/mdf_stat/views/tabs_content.php:184
+msgid "How many taxonomies per one search request will be written down into the statistical mySQL table for 1 unique user. The excess data will be truncated! Number 5 is recommended. More depth - more space in the DataBase will be occupied by the data. "
+msgstr "Сколько таксономий на один поисковый запрос будет записано в статистическую таблицу mySQL для 1 уникального пользователя. Лишние данные будут обрезаны! Рекомендуется 5. Больше глубины - больше места в базе данных будет занято данными"
+
+#: ext/mdf_stat/views/tabs_content.php:172
+msgid "Max deep of the search request"
+msgstr "Макс глубина поискового запроса"
+
+#: ext/mdf_stat/views/tabs_content.php:167
+msgid "How many search requests will be catched and written down into the statistical mySQL table per 1 unique user before cron will assemble the data "
+msgstr "Сколько поисковых запросов будет перехвачено и записано в статистическую таблицу mySQL на 1 уникального пользователя до того, как cron соберет данные"
+
+#: ext/mdf_stat/views/tabs_content.php:155
+msgid "Max requests per unique user"
+msgstr "Максимальное количество запросов на уникального пользователя"
+
+#: ext/mdf_stat/views/tabs_content.php:144
+msgid "Insert meta keys separated by end of line (press enter button)."
+msgstr "Вставьте мета-ключи в конец строки (нажмите кнопку ввода)."
+
+#: ext/mdf_stat/views/tabs_content.php:142
+msgid "Meta data:"
+msgstr "Метаданные:"
+
+#: ext/mdf_stat/views/tabs_content.php:135
+msgid "Taxonomies:"
+msgstr "Таксономии:"
+
+#: ext/mdf_stat/views/tabs_content.php:113
+msgid "Post type:"
+msgstr "Тип поста:"
+
+#: ext/mdf_stat/views/tabs_content.php:105
+msgid "Select taxonomies and metadata which you want to track for each post type."
+msgstr "Выберите таксономию и метаданные, которые вы хотите отслеживать для каждого типа постов."
+
+#: ext/mdf_stat/views/tabs_content.php:92
+msgid "Collect Statistic for"
+msgstr "Собрать статистику для"
+
+#: ext/mdf_stat/views/tabs_content.php:85
+msgid "This data is very important for assembling statistics data, so please fill fields very responsibly. To collect statistical data uses a separate MySQL table."
+msgstr "Эти данные очень важны для сбора статистических данных, поэтому, пожалуйста, внимательно заполняйте поля. Для сбора статистических данных используется отдельная таблица MySQL."
+
+#: ext/mdf_stat/views/tabs_content.php:84
+msgid "Check DB connection"
+msgstr "Проверьте соединение с базой данных"
+
+#: ext/mdf_stat/views/tabs_content.php:81
+msgid "Password"
+msgstr "Пароль"
+
+#: ext/mdf_stat/views/tabs_content.php:78
+msgid "DB Name"
+msgstr "Имя БД"
+
+#: ext/mdf_stat/views/tabs_content.php:75
+msgid "User"
+msgstr "Пользователь"
+
+#: ext/mdf_stat/views/tabs_content.php:72
+msgid "Host"
+msgstr "Хост"
+
+#: ext/mdf_stat/views/tabs_content.php:67
+msgid "Statistic -> Statistic options -> \"Stat server options\" inputs should be filled in by right data, another way not possible to collect statistical data!"
+msgstr "Статистика -> вкладка Параметры -> поля \"Параметры сервера статистики\" должны быть заполнены правильными данными, другой способ сбора статистических данных невозможен!"
+
+#: ext/mdf_stat/views/tabs_content.php:53
+msgid "Server options for statistic"
+msgstr "Параметры сервера для статистики"
+
+#: ext/mdf_stat/views/tabs_content.php:48
+msgid "Should be enabled to start assembling."
+msgstr "Должен быть включен чтобы начать сборку."
+
+#: ext/mdf_stat/views/tabs_content.php:40 views/settings.php:51
+msgid "Statistic"
+msgstr "Статистика"
+
+#: ext/mdf_stat/views/tabs_content.php:32
+msgid "Statistics collection is not enabled. Click on the previous button to see activation drop-down and DataBase options."
+msgstr "Сбор статистики не включен. Нажмите на предыдущую кнопку, чтобы увидеть раскрывающееся меню активации и параметры базы данных."
+
+#: ext/mdf_stat/views/tabs_content.php:28
+msgid "Enabled"
+msgstr "Включено"
+
+#: ext/mdf_stat/views/tabs_content.php:27
+msgid "Disabled"
+msgstr "Выключено"
+
+#: ext/mdf_stat/views/tabs_content.php:17
+msgid "Show/Hide statistic options"
+msgstr "Показать / скрыть параметры статистики"
+
+#: ext/mdf_stat/views/tabs_content.php:12 views/settings.php:785
+msgid "Read How to use here"
+msgstr "Прочтите как использовать здесь"
+
+#: ext/mdf_stat/views/tabs_content.php:10
+msgid "Notice:"
+msgstr "Примечание:"
+
+#: ext/marketing.php:183 index.php:1058
+msgid "Show All"
+msgstr "Показать все"
+
+#: ext/marketing.php:158 classes/shortcodes.php:107
+msgid "Date"
+msgstr "Дата"
+
+#: ext/marketing.php:157
+msgid "Types"
+msgstr "Типы"
+
+#: ext/marketing.php:156 views/marketing/metabox.php:7
+msgid "Link"
+msgstr "Ссылка"
+
+#: ext/marketing.php:155 classes/shortcodes.php:104
+#: views/widgets/search_form_tax.php:9 views/widgets/search_form.php:9
+#: views/widgets/post_data_form.php:3 index.php:1010
+msgid "Title"
+msgstr "Заголовок"
+
+#: ext/marketing.php:93
+msgid "MDTF Marketing Options"
+msgstr "Опции маркетинга MDTF"
+
+#: ext/marketing.php:88
+msgid "Marketing Settings"
+msgstr "Маркетинговые настройки:"
+
+#: ext/marketing.php:59
+msgid "Marketing Types"
+msgstr "Типы маркетинга"
+
+#: ext/marketing.php:56
+msgid "No Marketing Types found in Trash"
+msgstr "В корзине не найдено ни одного типа маркетинга"
+
+#: ext/marketing.php:55
+msgid "No Marketing Types found"
+msgstr "Типы маркетинга не найдены"
+
+#: ext/marketing.php:54
+msgid "Search Marketing Types"
+msgstr "Поиск маркетинговых типов"
+
+#: ext/marketing.php:53
+msgid "View Marketing Type"
+msgstr "Посмотреть тип маркетинга"
+
+#: ext/marketing.php:52
+msgid "New Marketing Type"
+msgstr "Новый тип маркетинга"
+
+#: ext/marketing.php:51
+msgid "Edit Marketing Types"
+msgstr "Редактировать типы маркетинга"
+
+#: ext/marketing.php:50
+msgid "Add New Marketing Type"
+msgstr "Добавить новый тип маркетинга"
+
+#: ext/marketing.php:49 index.php:99
+msgid "Add New"
+msgstr "Добавить новый"
+
+#: ext/marketing.php:48
+msgid "MDTF Marketing Links Types"
+msgstr "Типы маркетинговых ссылок MDTF"
+
+#: ext/marketing.php:47
+msgid "Links Types"
+msgstr "Тип ссылок"
+
+#: ext/marketing.php:23
+msgid "No Links found in Trash"
+msgstr "В корзине ссылок не найдено"
+
+#: ext/marketing.php:22
+msgid "No Links found"
+msgstr "Ссылок не найдено"
+
+#: ext/marketing.php:21
+msgid "Search Links"
+msgstr "Поиск ссылок"
+
+#: ext/marketing.php:20
+msgid "View Link"
+msgstr "Просмотреть ссылку"
+
+#: ext/marketing.php:19
+msgid "New Link"
+msgstr "Новая ссылка"
+
+#: ext/marketing.php:18
+msgid "Edit Link"
+msgstr "Изменить ссылку"
+
+#: ext/marketing.php:16 ext/marketing.php:17
+msgid "Add New Link"
+msgstr "Добавить новую ссылку"
+
+#: ext/marketing.php:15
+msgid "Marketing Links"
+msgstr "Маркетинговые ссылки"
+
+#: ext/marketing.php:14
+msgid "MDTF Marketing"
+msgstr "MDTF Маркетинг"
+
+#: ext/sort_panel.php:137
+msgid "Not using"
+msgstr "Не используется"
+
+#: ext/sort_panel.php:54
+msgid "Sort panel options"
+msgstr "Параметры панели сортировки"
+
+#: ext/sort_panel.php:21
+msgid "No Sort panels found in Trash"
+msgstr "Панели сортировки в корзине не найдены"
+
+#: ext/sort_panel.php:20
+msgid "No Sort panels found"
+msgstr "Панели сортировки не найдены"
+
+#: ext/sort_panel.php:19
+msgid "Search Sort panels"
+msgstr "Поиск панелей сортировки"
+
+#: ext/sort_panel.php:18
+msgid "View Sort panel"
+msgstr "Просмотр панели сортировки"
+
+#: ext/sort_panel.php:17
+msgid "New Sort panel"
+msgstr "Новая панель сортировки"
+
+#: ext/sort_panel.php:16
+msgid "Edit Sort panel"
+msgstr "Редактировать панель сортировки"
+
+#: ext/sort_panel.php:14 ext/sort_panel.php:15
+msgid "Add New Sort panel"
+msgstr "Добавить новую панель сортировки"
+
+#: ext/sort_panel.php:13
+msgid "Sort panels"
+msgstr "Панели сортировки"
+
+#: ext/sort_panel.php:12
+msgid "MDTF Sort panels"
+msgstr "MDTF Панели сортировки"
+
+#: ext/mdf_posts_messenger/mdf_posts_messenger.php:531
+msgid "Subscribe on the current search request"
+msgstr "Подпишитесь на текущий поисковый запрос"
+
+#: ext/mdf_posts_messenger/mdf_posts_messenger.php:453
+msgid "From: "
+msgstr "От:"
+
+#: ext/mdf_posts_messenger/mdf_posts_messenger.php:330
+msgid "Are you sure?"
+msgstr "Вы уверены?"
+
+#: ext/mdf_posts_messenger/mdf_posts_messenger.php:83
+msgid "You are unsubscribed from the future products newsletters."
+msgstr "Вы отказались от подписки на будущие информационные бюллетени по продуктам."
+
+#: ext/mdf_posts_messenger/mdf_posts_messenger.php:31
+msgid "Subscription"
+msgstr "Подписка"
+
+#: ext/mdf_posts_messenger/views/item_list_subscr.php:5
+msgid "new"
+msgstr "новый"
+
+#: ext/mdf_posts_messenger/views/show_terms_meta_names.php:124
+#: views/shortcode/search_panel_terms.php:144
+msgid "to:%s %s %s"
+msgstr "к:%s %s %s"
+
+#: ext/mdf_posts_messenger/views/show_terms_meta_names.php:123
+#: views/shortcode/search_panel_terms.php:143
+msgid "From:%s %s %s"
+msgstr "От:%s %s %s"
+
+#: ext/mdf_posts_messenger/views/show_terms_meta_names.php:109
+msgid "Author: %s"
+msgstr "Автор: %s"
+
+#: ext/mdf_posts_messenger/views/show_terms_meta_names.php:71
+#: ext/mdf_posts_messenger/views/show_terms_meta_names.php:88
+#: views/shortcode/search_panel_terms.php:192
+msgid "to:"
+msgstr "к:"
+
+#: ext/mdf_posts_messenger/views/show_terms_meta_names.php:67
+#: ext/mdf_posts_messenger/views/show_terms_meta_names.php:85
+#: ext/mdf_stat/index.php:1184 ext/mdf_stat/index.php:1187
+#: views/shortcode/post_features_panel.php:37
+#: views/shortcode/post_features_panel.php:163
+#: views/shortcode/search_panel_terms.php:189
+msgid "From:"
+msgstr "От:"
+
+#: ext/mdf_posts_messenger/views/woo_email_template.php:94
+#: classes/shortcodes.php:779
+msgid "No products found"
+msgstr "Товаров не обнаружено"
+
+#: ext/mdf_posts_messenger/views/woo_email_template.php:89
+msgid "See more new products..."
+msgstr "Увидеть больше новинок ..."
+
+#: ext/mdf_posts_messenger/views/mdf_email_template.php:81
+msgid "No posts found"
+msgstr "Не найдено постов"
+
+#: ext/mdf_posts_messenger/views/mdf_email_template.php:76
+msgid "See more..."
+msgstr "Смотреть ещё..."
+
+#: ext/mdf_posts_messenger/views/mdf_email_template.php:38
+#: ext/mdf_posts_messenger/views/mdf_email_template.php:87
+#: ext/mdf_posts_messenger/views/woo_email_template.php:74
+#: ext/mdf_posts_messenger/views/woo_email_template.php:99
+msgid "unsubscribe"
+msgstr "отписаться"
+
+#: ext/mdf_posts_messenger/views/mdf_email_template.php:38
+#: ext/mdf_posts_messenger/views/mdf_email_template.php:87
+#: ext/mdf_posts_messenger/views/woo_email_template.php:74
+#: ext/mdf_posts_messenger/views/woo_email_template.php:99
+msgid "If you want to Unsubscribe from this newsletter"
+msgstr "Если вы хотите отказаться от подписки на эту рассылку"
+
+#: ext/mdf_posts_messenger/views/mdf_email_template.php:34
+#: ext/mdf_posts_messenger/views/woo_email_template.php:71
+msgid "Subscribe"
+msgstr "Подписка"
+
+#: ext/mdf_posts_messenger/views/mdf_email_template.php:33
+#: ext/mdf_posts_messenger/views/woo_email_template.php:70
+msgid "Attention! This is the last email. If you want to continue get such emails -> Go by next link and subscribe again"
+msgstr "Внимание! Это последнее письмо. Если вы хотите и дальше получать такие письма -> перейдите по следующей ссылке и подпишитесь снова"
+
+#: ext/mdf_posts_messenger/views/mdf_email_template.php:30
+#: ext/mdf_posts_messenger/views/woo_email_template.php:67
+msgid "Terms"
+msgstr "Тёрмы"
+
+#: ext/mdtf-pagination/tw-pagination.php:302 views/settings.php:726
+msgid "The minimum number of pages in a gap before an ellipsis (...) is added. Recommended value: 3"
+msgstr "Минимальное количество страниц в промежутке перед добавлением многоточия (...). Рекомендуемое значение: 3"
+
+#: ext/mdtf-pagination/tw-pagination.php:295
+msgid "Page Gap:"
+msgstr "Разрыв страницы"
+
+#: ext/mdtf-pagination/tw-pagination.php:292 views/settings.php:706
+msgid "The number of links to always show at beginning and end of pagination. Recommended value: 1"
+msgstr "Количество ссылок, которые всегда отображаются в начале и в конце пагинации. Рекомендуемое значение: 1"
+
+#: ext/mdtf-pagination/tw-pagination.php:285
+msgid "Page Anchors:"
+msgstr "Якоря страницы:"
+
+#: ext/mdtf-pagination/tw-pagination.php:282 views/settings.php:687
+msgid "The number of page links to show before and after the current page. Recommended value: 3"
+msgstr "Количество ссылок на страницы, отображаемых до и после текущей страницы. Рекомендуемое значение: 3"
+
+#: ext/mdtf-pagination/tw-pagination.php:275
+msgid "Page Range:"
+msgstr "Диапазон страниц:"
+
+#: ext/mdtf-pagination/tw-pagination.php:272 views/settings.php:752
+msgid "Include the default stylesheet tw-pagination.css? Pagination will first look for <code>tw-pagination.css</code> in your theme directory (<code>themes/%s</code>)."
+msgstr "Включить таблицу стилей по умолчанию tw-pagination.css? При разбивке на страницы сначала выполняется поиск <code>tw-pagination.css</code> в каталоге вашей темы (<code>themes /%s</code>)."
+
+#: ext/mdtf-pagination/tw-pagination.php:270
+msgid "Pagination CSS File:"
+msgstr "CSS-файл разбивки на страницы:"
+
+#: ext/mdtf-pagination/tw-pagination.php:267
+msgid "Show Before Markup and After Markup, even if the page list is empty?"
+msgstr "Показывать «До разметки» и «После разметки», даже если список страниц пуст?"
+
+#: ext/mdtf-pagination/tw-pagination.php:265
+msgid "Markup Display:"
+msgstr "Отображение разметки:"
+
+#: ext/mdtf-pagination/tw-pagination.php:262 views/settings.php:668
+msgid "The HTML markup to display after the pagination code."
+msgstr "Разметка HTML для отображения после кода нумерации страниц."
+
+#: ext/mdtf-pagination/tw-pagination.php:260
+msgid "After Markup:"
+msgstr "После разметки:"
+
+#: ext/mdtf-pagination/tw-pagination.php:257 views/settings.php:649
+msgid "The HTML markup to display before the pagination code."
+msgstr "Разметка HTML для отображения перед кодом разбивки на страницы."
+
+#: ext/mdtf-pagination/tw-pagination.php:255
+msgid "Before Markup:"
+msgstr "Перед разметкой:"
+
+#: ext/mdtf-pagination/tw-pagination.php:252
+msgid "Advanced Settings"
+msgstr "Расширенные настройки"
+
+#: ext/mdtf-pagination/tw-pagination.php:248 views/settings.php:630
+msgid "The text/HTML to display for the next page link."
+msgstr "Текст / HTML отображаемый для ссылки на следующую страницу."
+
+#: ext/mdtf-pagination/tw-pagination.php:246
+msgid "Next Page:"
+msgstr "Следующая страница:"
+
+#: ext/mdtf-pagination/tw-pagination.php:243 views/settings.php:611
+msgid "The text/HTML to display for the previous page link."
+msgstr "Текст / HTML, отображаемый для ссылки на предыдущую страницу."
+
+#: ext/mdtf-pagination/tw-pagination.php:241
+msgid "Previous Page:"
+msgstr "Пред. страница:"
+
+#: ext/mdtf-pagination/tw-pagination.php:238 views/settings.php:592
+msgid "The text/HTML to display before the list of pages."
+msgstr "Текст / HTML, отображаемый перед списком страниц."
+
+#: ext/mdtf-pagination/tw-pagination.php:236
+msgid "Pagination Label:"
+msgstr "Ярлык разбиения на страницы:"
+
+#: ext/mdtf-pagination/tw-pagination.php:224
+msgid "Whoops! There was a problem with the data you posted. Please try again."
+msgstr "Ой! Возникла проблема с опубликованными вами данными. Пожалуйста, попробуйте еще раз."
+
+#: ext/mdtf-pagination/tw-pagination.php:222
+msgid "Success! Your changes were successfully saved!"
+msgstr "Успех! Ваши изменения успешно сохранены!"
+
+#: ext/mdtf-pagination/tw-pagination.php:201 index.php:358
+msgid "Settings"
+msgstr "Настройки"
+
+#: ext/mdtf-pagination/tw-pagination.php:170 views/settings.php:584
+msgid "Pages:"
+msgstr "Страницы:"
+
+#: ext/const_links.php:48
+msgid "Links options"
+msgstr "Настройки ссылок"
+
+#: ext/const_links.php:20
+msgid "No Constant links found in Trash"
+msgstr "В корзине постоянных ссылок не найдено"
+
+#: ext/const_links.php:19
+msgid "No Constant links found"
+msgstr "Постоянных ссылок не найдено"
+
+#: ext/const_links.php:18
+msgid "Search Constant links"
+msgstr "Поиск постоянных ссылок"
+
+#: ext/const_links.php:17
+msgid "View Constant link"
+msgstr "Посмотреть постоянную ссылку"
+
+#: ext/const_links.php:16
+msgid "New Constant link"
+msgstr "Новая постоянная ссылка"
+
+#: ext/const_links.php:15
+msgid "Edit Constant link"
+msgstr "Изменить постоянную ссылку"
+
+#: ext/const_links.php:13 ext/const_links.php:14
+msgid "Add New Constant link"
+msgstr "Добавить новую постоянную ссылку"
+
+#: ext/const_links.php:12
+msgid "Constant link"
+msgstr "Постоянная ссылка"
+
+#: ext/const_links.php:11
+msgid "MDTF Constant links"
+msgstr "Постоянные ссылки MDTF"
+
+#. Author URI of the plugin
+msgid "https://pluginus.net/"
+msgstr "https://pluginus.net/"
+
+#. Author of the plugin
+msgid "realmag777"
+msgstr "realmag777"
+
+#. Description of the plugin
+msgid "Powerful and Flexible Filter Tools. Let your clients find all things they are want with the ease on your site."
+msgstr "Мощные и гибкие инструменты фильтрации. Позвольте вашим клиентам с легкостью найти на вашем сайте все, что им нужно."
+
+#. Plugin URI of the plugin
+msgid "https://wp-filter.com/"
+msgstr "https://wp-filter.com/"
+
+#. Plugin Name of the plugin
+msgid "WordPress Meta Data & Taxonomies Filter (MDTF)"
+msgstr "WordPress Meta Data & Taxonomies Filter (MDTF)"

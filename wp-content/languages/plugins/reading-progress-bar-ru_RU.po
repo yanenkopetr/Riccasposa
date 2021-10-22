@@ -1,0 +1,116 @@
+# Translation of Plugins - Reading progressbar - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Reading progressbar - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-08-12 07:46:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Reading progressbar - Stable (latest release)\n"
+
+#. Author of the plugin
+msgid "Jb Audras"
+msgstr "Jb Audras"
+
+#. Author URI of the plugin
+msgid "http://jeanbaptisteaudras.com"
+msgstr "http://jeanbaptisteaudras.com"
+
+#. Description of the plugin
+msgid "A reading position indicator that you can use where you want: top, bottom or custom position in differents templates or post types."
+msgstr "Индикатор прогресса чтения в виде полосы, которую моно разместить в разных местах: вверху, внизу страницы или где-то ещё, в различных шаблонах или типах записей."
+
+#. Plugin URI of the plugin
+msgid "https://jeanbaptisteaudras.com/portfolio/wordpress-reading-progressbar-indicator-plugin/"
+msgstr "https://jeanbaptisteaudras.com/portfolio/wordpress-reading-progressbar-indicator-plugin/"
+
+#. Plugin Name of the plugin
+msgid "Reading Progress Bar"
+msgstr "Reading Progress Bar"
+
+#: admin/rp-admin.php:261
+msgid "Check out the plugin options below."
+msgstr "Проверьте настройки плагина ниже."
+
+#: admin/rp-admin.php:216
+msgid "Single post / page / custom post type"
+msgstr "Запись / Страница / Запись произвольного типа"
+
+#: admin/rp-admin.php:215 admin/rp-admin.php:217
+msgid "(you need to include concerned post types below)"
+msgstr "(необходимо указать соответствующие типы записей ниже)"
+
+#: admin/rp-admin.php:214
+msgid "Archives and categories / taxonomies for posts or custom post types"
+msgstr "Архивы и рубрики / таксономии записей или произвольных типов записей"
+
+#: admin/rp-admin.php:212
+msgid "Blog page"
+msgstr "Страница блога"
+
+#: admin/rp-admin.php:211 admin/rp-admin.php:213
+msgid "(as set in Settings &gt; Reading)"
+msgstr "(как установлено в разделе Настройки &gt; Чтение)"
+
+#: admin/rp-admin.php:210
+msgid "Front-page"
+msgstr "Внешняя страница"
+
+#: admin/rp-admin.php:190
+msgid "Note: use it only if you have selected <b>custom</b> position before, instead of <b>top</b> or <b>bottom</b>"
+msgstr "Используйте его только в том случае, активирована опция <b>пользовательской</b> позиции, а не <b>сверху</b> или <b>снизу</b>."
+
+#: admin/rp-admin.php:177
+msgid "Note: custom position is not ok with all WordPress themes. It needs a fixed element to stick the progressbar on it. <br />You may need some custom CSS to put the progressbar on the right place as it uses absolute positionning."
+msgstr "Произвольное расположение не поддерживается некоторыми темами WordPress. Требуется добавить фиксированный элемент для закрепления в нём строки прогресса.<br />Вам потребуется внести несколько изменений в CSS, чтобы расположить строку прогресса в нужное место, поскольку она использует абсолютное позиционирование."
+
+#: admin/rp-admin.php:175
+msgid "Custom"
+msgstr "Произвольно"
+
+#: admin/rp-admin.php:174
+msgid "Bottom"
+msgstr "Внизу"
+
+#: admin/rp-admin.php:173
+msgid "Top"
+msgstr "Вверху"
+
+#: admin/rp-admin.php:110
+msgid "Select post types to apply progressbar"
+msgstr "Выберите типы записей в которых следует отображать индикатор"
+
+#: admin/rp-admin.php:102
+msgid "Select templates to apply progressbar"
+msgstr "Выберите шаблон в котором следует отображать индикатор"
+
+#: admin/rp-admin.php:94
+msgid "Target fixed HTML element class/id to stick the bar on it’s bottom"
+msgstr "Задайте фиксированный класс/идентификатор HTML-элемента, чтобы прикрепить индикатор к его нижней части."
+
+#: admin/rp-admin.php:86
+msgid "Progressbar position"
+msgstr "Позиция индикатора прогресса чтения"
+
+#: admin/rp-admin.php:78
+msgid "Background color"
+msgstr "Цвет заднего фона"
+
+#: admin/rp-admin.php:70
+msgid "Foreground color"
+msgstr "Цвет переднего фона"
+
+#: admin/rp-admin.php:62
+msgid "Progressbar height (pixels)"
+msgstr "Высота индикатора прогресса чтения (в пикселях)"
+
+#: admin/rp-admin.php:45
+msgid "Reading progressbar"
+msgstr "Индикатор прогресса чтения"
+
+#: admin/rp-admin.php:45 admin/rp-admin.php:55
+msgid "Reading progressbar options"
+msgstr "Настройки индикатора прогресса чтения"
