@@ -1,0 +1,171 @@
+.header .nav-item a {
+    color: black;
+}
+
+.header {
+    background: white;
+}
+
+.logo svg path {
+    fill: #000;
+}
+
+.header:after {
+    content: '';
+    position: absolute;
+    height: 0.7px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(19, 18, 18, 0.5);
+    z-index: 100;
+}
+
+.header .nav-item a:before {
+    background: black;
+}
+
+.first-section {
+    margin-top: 160px;
+    text-align: center;
+}
+
+.about-title {
+    position: relative;
+    font-family: Cormorant;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 119%;
+
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.about-title:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    height: 15px;
+    right: 0;
+    left: 0;
+    bottom: 13px;
+    background: rgba(195, 142, 142, 0.6);
+}
+
+.section {
+    margin-top: 80px;
+}
+
+.first-section {
+    margin-top: 160px!important;
+}
+
+.about-info {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 119%;
+    /* or 17px */
+
+    letter-spacing: 0.15em;
+
+    color: #000000;
+}
+
+.garant_title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 119%;
+    /* identical to box height, or 17px */
+
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.garant-row {
+    flex-wrap: wrap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 119%;
+    /* or 17px */
+
+    text-align: center;
+    letter-spacing: 0.15em;
+
+    color: #000000;
+}
+
+.garant-block {
+    margin: 40px 0;
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.garant-block img {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.garant-block span {
+    width: 220px;
+}
+
+.underline_block {
+    height: 0.7px;
+    background:#000000;
+    margin: 0 40px;
+}
+
+.fives-section {
+    margin: 40px 100px;
+    display: flex;
+    font-family: Cormorant;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 119%;
+    /* or 43px */
+
+    text-align: center;
+    letter-spacing: 0.075em;
+
+    color: #000000;
+}
+
+.fives-section .quotes {
+    margin: 0 40px;
+    font-family: Cormorant;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.transform-rotate-180 {
+    transform: rotate(-180deg);
+}
+
+.six-section  .underline_block {
+    margin: 150px 0 0;
+}
