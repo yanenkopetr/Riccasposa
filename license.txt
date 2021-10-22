@@ -26,7 +26,7 @@ permission notices:
 
   b2 is released under the GPL
 
-and updated
+and    111
 
   WordPress - Web publishing software
 
