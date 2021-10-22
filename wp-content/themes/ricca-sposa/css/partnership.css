@@ -4,15 +4,12 @@
 .partnership-title {
     text-align: center;
     margin: 0;
-
     font-family: Cormorant;
     font-weight: 500;
     font-size: 48px;
     line-height: 119%;
-
     letter-spacing: 0.075em;
     text-transform: uppercase;
-
     color: #000000;
 }
 .title-block {
@@ -38,16 +35,13 @@
     width: 745px;
     height: 85px;
     margin: 0 auto 80px;
-
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 119%;
-
     text-align: center;
     letter-spacing: 0.15em;
-
     color: #000000;
 }
 .partnershipbBtn-form {
@@ -64,7 +58,6 @@
     letter-spacing: 0.075em;
     text-transform: uppercase;
     color: #000000;
-
     border: 0.7px solid #000000;
     background: none;
     cursor: pointer;
@@ -97,6 +90,56 @@
     width: 1360px;
     height: 0.7px;
     background: #000000;
-
     margin:0 auto 77px;
+}
+.partnership-form_title{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 119%;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #000000;
+    margin: 0 0 68px;
+}
+.partnership-form_block {
+    display: flex;
+    justify-content: center;
+}
+.input-form {
+    width: 465px;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #D3D3D3;
+}
+.label-form {
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 119%;
+    letter-spacing: 0.075em;
+
+    color: #929292;
+}
+.span-form {
+    color:#C38E8E; 
+}
+.form-btn {
+    width: 243px;
+    height: 62px;
+    background: #C38E8E;
+    border: none;
+    color: white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 119%;
+    letter-spacing: 0.21em;
+    text-transform: uppercase;
+}
+.form_block-1 {
+    margin-right: 58px;
+}
+.form_block-2 {
+    margin-left: 58px;
 }

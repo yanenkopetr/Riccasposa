@@ -37,7 +37,10 @@
     </section>
 
     <section class="partnership-form">
-        <h2>PLEASE FILL IN THIS CONTACT FORM AND WE WILL SEND YOU WHOLESALE PRICE LIST</h2>
+        <h2 class="partnership-form_title">PLEASE FILL IN THIS CONTACT FORM AND WE WILL SEND YOU WHOLESALE PRICE LIST</h2>
+
+        <?php echo do_shortcode( '[contact-form-7 id="149" title="Contact form 1"]' ); ?>
+
     </section>
 
 <?php get_footer();?>
