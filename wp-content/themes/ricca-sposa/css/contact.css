@@ -1,0 +1,84 @@
+.contact-block {
+    padding-top: 160px;
+}
+
+.contact-title {
+    text-align: center;
+    margin: 0;
+
+    font-family: Cormorant;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 119%;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+.contact-block_title {
+    width: 277px;
+    height: 57px;
+    margin: 0 auto;
+    margin-bottom: 86px;
+
+    position: relative;
+}
+.contact-title_bg {
+    margin: 0;
+    height: 15px;
+    border: none;
+    background: rgba(195, 142, 142, 0.6);
+    width: 100%;
+
+    position: absolute;
+    top: 28px;
+    left: 0;
+    z-index: -1;
+}
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 198px;
+}
+.contacts-img {
+    position: absolute;
+    top: -11px;
+    left: -53px;
+    z-index: 1;
+}
+.contacts-name {
+    font-family: Cormorant;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 119%;
+    margin:61px 53px 23px 0;
+    letter-spacing: 0.075em;
+
+    color: #000000;
+}
+.contacts-phone {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 119%;
+    margin: 0;
+    letter-spacing: 0.165em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+.contacts-country {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 119%;
+    margin: 0;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+.contact-contacts {
+    position: relative;
+}
