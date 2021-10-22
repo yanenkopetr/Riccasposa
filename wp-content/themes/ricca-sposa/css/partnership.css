@@ -30,7 +30,7 @@
     width: 100%;
 
     position: absolute;
-    top: 28px;
+    top: 30px;
     left: 0;
     z-index: -1;
 }
@@ -50,7 +50,7 @@
 
     color: #000000;
 }
-.partnershipbBtn-block {
+.partnershipbBtn-form {
     display: flex;
     justify-content: center;
     margin-bottom: 82px;
@@ -61,28 +61,42 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 119%;
-
     letter-spacing: 0.075em;
     text-transform: uppercase;
-
     color: #000000;
 
     border: 0.7px solid #000000;
     background: none;
+    cursor: pointer;
 
     width: 259px;
     height: 73px;
 }
-.partnership-btn:nth-child(2) {
+.partnership-btn_block:nth-child(2) {
     margin: 0 135px;
 }
 .partnership-btn_plus {
     width: 52px;
-    background: crimson;
+    background: white;
+    position: absolute;
+    bottom: -4px;
+    left: 103px;
+    z-index: 1;
 }
 .partnership-btn_plus img {
     display: block;
     margin: 0 auto;
     width: 12px;
     height: 10px;
+}
+.partnership-btn_block {
+    position: relative;
+    cursor: pointer;
+}
+.partnership-line {
+    width: 1360px;
+    height: 0.7px;
+    background: #000000;
+
+    margin:0 auto 77px;
 }
