@@ -113,9 +113,10 @@
     border: none;
     border-bottom: 1px solid #D3D3D3;
 }
-.input-form:focus-visible {
+.input-form:focus {
     outline: 0;
     border-bottom: 1px solid #C38E8E;
+    color: #C38E8E;
 }
 .label-form {
     font-family: Montserrat;
@@ -158,8 +159,20 @@
 .form-massage:focus-visible {
     outline: 0;
     border-bottom: 1px solid #C38E8E;
+    color: #C38E8E;
 }
 .btn-JoiUs {
-    margin: 28px 0 0;
+    margin: 30px 0 0;
     text-align: center;
+}
+.p-form {
+    margin: 30px 0 0;
+}
+
+.label-form:hover {
+    color: #C38E8E;
+    cursor: pointer;
+}
+.input-form:hover {
+    border-bottom: 1px solid #C38E8E;
 }
