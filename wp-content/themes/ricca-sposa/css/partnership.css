@@ -105,6 +105,7 @@
 .partnership-form_block {
     display: flex;
     justify-content: center;
+    margin-bottom: 150px;
 }
 .input-form {
     width: 465px;
@@ -112,12 +113,16 @@
     border: none;
     border-bottom: 1px solid #D3D3D3;
 }
+.input-form:focus-visible {
+    outline: 0;
+    border-bottom: 1px solid #C38E8E;
+}
 .label-form {
     font-family: Montserrat;
     font-size: 12px;
     line-height: 119%;
     letter-spacing: 0.075em;
-
+    margin: 30px 0 0;
     color: #929292;
 }
 .span-form {
@@ -142,4 +147,19 @@
 }
 .form_block-2 {
     margin-left: 58px;
+}
+.form-massage {
+    width: 455px;
+    height: 144px;
+    border: none;
+    resize: none;
+    border-bottom: 1px solid #D3D3D3;
+}
+.form-massage:focus-visible {
+    outline: 0;
+    border-bottom: 1px solid #C38E8E;
+}
+.btn-JoiUs {
+    margin: 28px 0 0;
+    text-align: center;
 }
