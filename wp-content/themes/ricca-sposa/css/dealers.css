@@ -1,3 +1,6 @@
+.pr {
+    position: relative;
+}
 .dealers-block {
     padding-top: 160px;
 }
@@ -45,6 +48,11 @@
 }
 #formCountry-selected, #formCity-selected {
     display: block;
+    width: 310px;
+    height: px;
+    padding-bottom: 18px;
+    border: none;
+    border-bottom: 0.7px solid #000000;;
 }
 .form-dealers_selected {
     display: flex;
@@ -57,4 +65,28 @@
 }
 .form-dealers_selected p:nth-child(2) {
     margin: 0 0 0 48px;
+}
+.formCountry-label span{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 119%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #929292;
+}
+.formCountry-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 310px;
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    z-index: 1;
+}
+
+.form-selected_p {
+    height: 39px;
 }
