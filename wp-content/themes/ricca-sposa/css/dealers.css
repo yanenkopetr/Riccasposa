@@ -1,0 +1,60 @@
+.dealers-block {
+    padding-top: 160px;
+}
+.dealers-title {
+    font-family: Cormorant;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 119%;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+}
+.dealers-block_title {
+    width: 388px;
+    height: 57px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+
+    position: relative;
+}
+.dealers-title_bg {
+    margin: 0;
+    height: 15px;
+    border: none;
+    background: rgba(195, 142, 142, 0.6);
+    width: 100%;
+
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: -1;
+}
+.selected-title {
+    font-family: Cormorant;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 119%;
+    letter-spacing: 0.075em;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 120px;
+}
+#formCountry-selected, #formCity-selected {
+    display: block;
+}
+.form-dealers_selected {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 73px;
+}
+
+.form-dealers_selected p:nth-child(1) {
+    margin: 0 48px 0 0;
+}
+.form-dealers_selected p:nth-child(2) {
+    margin: 0 0 0 48px;
+}
