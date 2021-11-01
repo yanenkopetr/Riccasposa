@@ -37,6 +37,45 @@ add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
 // Add custom post types
 add_action( 'init', 'register_post_types' );
 function register_post_types() {
+	// Country
+	$country_labels = array(
+		'name'               => _x('Страны', 'post type general name'),
+		'singular_name'      => _x('Страна', 'post type singular name'),
+		'add_new'            => _x('Добавить', ''),
+		'add_new_item'       => __('Добавить'),
+		'edit_item'          => __('Редактировать'),
+		'new_item'           => __('Новая страна'),
+		'view_item'          => __('Смотреть'),
+		'search_items'       => __('Найти'),
+		'not_found'          => __('Не найдено'),
+		'not_found_in_trash' => __('Пусто'),
+		'parent_item_colon'  => ''
+	);
+
+	$country_args = array(
+		'labels'             => $country_labels,
+		'public'             => true,
+		'has_archive'        => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'rewrite'            => true,
+		'query_var'          => true,
+		'capability_type'    => 'post',
+		'hierarchical'       => false,
+		'_builtin'           => false,
+		'rewrite'            => array('slug' => 'countries', 'with_front' => true),
+		'show_in_nav_menus'  => false,
+		'menu_position'      => 20,
+		'menu_icon'          => 'dashicons-admin-page',
+		'supports'           => array(
+			'title',
+			'editor',
+			'thumbnail'
+		)
+	);
+	register_post_type('countries', $country_args);
+
+	// Country
 
 	$dress_labels = array(
 		'name'               => _x('Платья', 'post type general name'),
@@ -216,6 +255,19 @@ if (function_exists('register_sidebar')) {
     ) );
 }
 
+// Шаблон для стран
+	add_filter( 'single_template', function ( $single_template ) {
+	
+		$parent     = 'countries'; //Здесь вставляем id категории(рубрики) для которой хотите изменить шаблон у детальной страницы записи
+		$categories = get_categories( 'child_of=' . $parent );
+		$cat_names  = wp_list_pluck( $categories, 'name' );
+	
+		if ( has_category( 'movies' ) || has_category( $cat_names ) ) {
+			$single_template = dirname( __FILE__ ) . '/single-countries.php'; // название файла шаблона
+		}
+		return $single_template;
+	}, PHP_INT_MAX, 2 );
+// 
 
 // remove radio buttons validation
 remove_filter('wpcf7_validate_radio', 'wpcf7_checkbox_validation_filter', 10);

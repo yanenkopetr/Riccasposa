@@ -33,6 +33,20 @@
                 <div class="partnership-btn_plus"><img src="<?= get_template_directory_uri();?>/img/plus.svg" alt=""></div>
             </div>
         </form>
+
+        <div class="partnershipBlock-text">
+        <p>Minimal order:</p>
+        <p>5 pieces. The order can include different models.</p>
+        <p>Payment:</p>
+        <p>cash money transfer non-cash settlements</p>
+        <p>Tailoring Period:</p>
+        <p>We guarantee to complete the order within 2-4 weeks.</p>
+        <p>For our regular customers:</p>
+        <p>We care about establishing long-term partnerships with customers.</p>
+        <p>Therefore, for our regular customers, there is a flexible discount system.</p>
+        <p>Delivery:</p>
+        <p>Delivery is possible throughout the CIS and the EU.</p>
+        </div>
         <div class="partnership-line"></div>
     </section>
 

@@ -132,6 +132,7 @@
 .form-btn {
     width: 243px;
     height: 62px;
+    cursor: pointer;
     background: #C38E8E;
     border: none;
     color: white;
@@ -175,4 +176,17 @@
 }
 .input-form:hover {
     border-bottom: 1px solid #C38E8E;
+}
+.partnershipBlock-text {
+    display: none;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 119%;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #000000;
+    margin-bottom: 79px;
 }

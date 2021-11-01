@@ -1,7 +1,7 @@
 .pr {
     position: relative;
 }
-.dealers-block {
+.title {
     padding-top: 160px;
 }
 .dealers-title {
@@ -89,4 +89,74 @@
 
 .form-selected_p {
     height: 39px;
+}
+.dealers-line {
+    width: 1360px;
+    height: 0.7px;
+    background: #000000;
+    margin:0 auto 61px;
+}
+.dealers-list {
+    width: 716px;
+    margin: 0 auto 107px auto;
+}
+.container-list {
+    display: flex;
+}
+.dealers-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.dealers-list ul:nth-child(1) {
+    margin-right: 271px;
+}
+.dealers-list ul li {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 119%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 24px;
+}
+.dealers-block #map {
+    background-size: cover !important;
+    width: 1360px;
+    height: 445px;
+    border: 1px solid #000000;
+    margin: 0 auto 98px;
+}
+.dealers-country_title {
+    text-align: center;
+    font-family: Cormorant;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 119%;
+    letter-spacing: 0.075em;
+    color: #000000;
+    margin-bottom: 75px;
+}
+.dealers-listCountry {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+}
+.listCountry-btn {
+    background: #C38E8E;
+    border: 1px solid #FAFAFA;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 119%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 20px 69px;
 }
