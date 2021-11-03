@@ -2,7 +2,7 @@
 /* Template Name: Dealers */
 ?>
 
-<?php get_header();?>
+<?php get_header(); ?>
 
     <style>
         @import url(<?= get_stylesheet_directory_uri() . '/css/about.css'?>);
@@ -12,14 +12,15 @@
     <section class="title">
         <div class="dealers-block_title">
             <h1 class="dealers-title">OUR PARTNERS</h1>
-            <hr class="dealers-title_bg">    
+            <hr class="dealers-title_bg">
         </div>
     </section>
 
     <section class="dealers-country">
         <h2 class="dealers-country_title">Select country from the list:</h2>
         <div class="dealers-listCountry">
-            <a href="#" id="uk" class="listCountry-btn" data-marker="{{name:Chernihiv,lat:14.15,long:14.16},{name:Harkiv,lat:55.14,long:22.16}}">Ukraine</a>
+            <a href="#" id="uk" class="listCountry-btn"
+               data-marker="Ukraine">Ukraine</a>
             <a href="#" id="ru" class="listCountry-btn">Russia</a>
             <a href="http://localhost/countries/belarus/" class="listCountry-btn">Belarus</a>
         </div>
@@ -47,7 +48,7 @@
                     </svg>
                 </label>
                 <input type="text" name="form-country" id="formCountry-selected">
-            </p>      
+            </p>
         </form>
 
         <div class="dealers-line"></div>
@@ -68,56 +69,63 @@
         </div>
 
         <div id="map" class="map"></div>
-       
+
     </section>
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEGT1m3rS0e7uwvz4zm2uTLBq425VB8hQ"></script>
-        <script type="text/javascript">
-let map: google.maps.Map;
-let markers: google.maps.Marker[] = [];
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/countries.js"></script>
 
-// Sets the map on all markers in the array.
-function setMapOnAll(map: google.maps.Map | null) {
-  for (let i = 0; i < markers.length; i++) {
-    markers[i].setMap(map);
-  }
-}
+    <script type="text/javascript">
 
-// Removes the markers from the map, but keeps them in the array.
-function hideMarkers(): void {
-  setMapOnAll(null);
-}
+        let map;
+        let markers = [];
 
-// Shows any markers currently in the array.
-function showMarkers(): void {
-  setMapOnAll(map);
-}
+        // Sets the map on all markers in the array.
+        function setMapOnAll(map) {
+            for (let i = 0; i < markers.length; i++) {
+                markers[i].setMap(map);
+            }
+        }
 
-// Deletes all markers in the array by removing references to them.
-function deleteMarkers(): void {
-  hideMarkers();
-  markers = [];
-}
+        // Removes the markers from the map, but keeps them in the array.
+        function hideMarkers() {
+            setMapOnAll(null);
+        }
+
+        // Shows any markers currently in the array.
+        function showMarkers() {
+            setMapOnAll(map);
+        }
+
+        // Deletes all markers in the array by removing references to them.
+        function deleteMarkers() {
+            hideMarkers();
+            markers = [];
+        }
+
+
         $(".listCountry-btn").click(function (event) {
             event.preventDefault();
+
             $('.dealers-block').show();
-  //need to get the data-name here
-            var MARKERS = $(event.target).data('marker');
-            var newMarkersArray = [];
+            var countryName = $(event.target).data('marker');
 
             deleteMarkers();
 
-            MARKERS.each(function( marker ) {
+            let cities =  county[countryName];
+            var citiesName = [];
 
+            cities.forEach(function (marker) {
 
+                citiesName.push(marker.name)
                 markers.push(addMarker(map,
-                marker.lat,
-                marker.long,
-                marker.name,
-                "<?= get_template_directory_uri();?>/img/icon-marker.png",
-                marker.name));
+                    marker.lat,
+                    marker.long,
+                    marker.name,
+                    "<?= get_template_directory_uri();?>/img/icon-marker.png",
+                    marker.name));
 
-                })
-
+            });
 
             if (markers.length == 1) {
                 map.setCenter(markers[0].getPosition());
@@ -125,28 +133,55 @@ function deleteMarkers(): void {
             } else {
                 var bounds = new google.maps.LatLngBounds();
                 for (var i = 0; i < markers.length; i++) {
-                bounds.extend(markers[i].getPosition());
+                    bounds.extend(markers[i].getPosition());
                 }
                 map.fitBounds(bounds);
             }
-        } )
-            function addMarker(map, lat, long, title, icon, content) {
+
+            $('.cities-list').html('');
+
+            var content = '<ul>';
+            var contentIndex = 0;
+            var cityLast = citiesName[citiesName.length]
+
+            citiesName.forEach(function (city) {
+
+                if (cityLast === city) {
+                    content += '<li>' + city + '<li></ul>';
+                }
+                else {
+                    if (contentIndex < 3) {
+                        content += '<li>' + city + '<li>';
+                    }
+                    else {
+                        content += '</ul><ul><li>' + city + '<li>';
+                        contentIndex = 0
+                    }
+                    contentIndex += 1
+                }
+
+            });
+
+            $('.cities-list').html(content);
+        });
+
+        function addMarker(map, lat, long, title, icon, content) {
             var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(lat,long),
-                title:title,
+                position: new google.maps.LatLng(lat, long),
+                title: title,
                 icon: icon,
                 map: map
             });
             var info = new google.maps.InfoWindow({
                 content: content
             });
-            marker.addListener('click', function() {
+            marker.addListener('click', function () {
                 info.open(map, marker);
             });
             return marker;
-            }
+        }
 
-            function initializeMap() {
+        function initializeMap() {
             map = new google.maps.Map(document.getElementById("map"));
 
             markers.push(addMarker(map,
@@ -198,12 +233,12 @@ function deleteMarkers(): void {
             } else {
                 var bounds = new google.maps.LatLngBounds();
                 for (var i = 0; i < markers.length; i++) {
-                bounds.extend(markers[i].getPosition());
+                    bounds.extend(markers[i].getPosition());
                 }
                 map.fitBounds(bounds);
             }
-            }
+        }
 
-            google.maps.event.addDomListener(window, 'load', initializeMap);
-        </script>
-<?php get_footer();?>
+        google.maps.event.addDomListener(window, 'load', initializeMap);
+    </script>
+<?php get_footer(); ?>
