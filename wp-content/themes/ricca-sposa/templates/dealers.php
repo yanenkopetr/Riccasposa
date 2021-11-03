@@ -19,7 +19,7 @@
     <section class="dealers-country">
         <h2 class="dealers-country_title">Select country from the list:</h2>
         <div class="dealers-listCountry">
-            <a href="#" id="uk" class="listCountry-btn">Ukraine</a>
+            <a href="#" id="uk" class="listCountry-btn" data-marker="{{name:Chernihiv,lat:14.15,long:14.16},{name:Harkiv,lat:55.14,long:22.16}}">Ukraine</a>
             <a href="#" id="ru" class="listCountry-btn">Russia</a>
             <a href="http://localhost/countries/belarus/" class="listCountry-btn">Belarus</a>
         </div>
@@ -53,7 +53,7 @@
         <div class="dealers-line"></div>
 
         <div class="dealers-list">
-            <dis class="container-list">
+            <dis class="container-list cities-list">
                 <ul>
                     <li>Chernigov</li>
                     <li>Kyiv</li>
@@ -68,8 +68,68 @@
         </div>
 
         <div id="map" class="map"></div>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEGT1m3rS0e7uwvz4zm2uTLBq425VB8hQ"></script>
+       
+    </section>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEGT1m3rS0e7uwvz4zm2uTLBq425VB8hQ"></script>
         <script type="text/javascript">
+let map: google.maps.Map;
+let markers: google.maps.Marker[] = [];
+
+// Sets the map on all markers in the array.
+function setMapOnAll(map: google.maps.Map | null) {
+  for (let i = 0; i < markers.length; i++) {
+    markers[i].setMap(map);
+  }
+}
+
+// Removes the markers from the map, but keeps them in the array.
+function hideMarkers(): void {
+  setMapOnAll(null);
+}
+
+// Shows any markers currently in the array.
+function showMarkers(): void {
+  setMapOnAll(map);
+}
+
+// Deletes all markers in the array by removing references to them.
+function deleteMarkers(): void {
+  hideMarkers();
+  markers = [];
+}
+        $(".listCountry-btn").click(function (event) {
+            event.preventDefault();
+            $('.dealers-block').show();
+  //need to get the data-name here
+            var MARKERS = $(event.target).data('marker');
+            var newMarkersArray = [];
+
+            deleteMarkers();
+
+            MARKERS.each(function( marker ) {
+
+
+                markers.push(addMarker(map,
+                marker.lat,
+                marker.long,
+                marker.name,
+                "<?= get_template_directory_uri();?>/img/icon-marker.png",
+                marker.name));
+
+                })
+
+
+            if (markers.length == 1) {
+                map.setCenter(markers[0].getPosition());
+                map.setZoom(8);
+            } else {
+                var bounds = new google.maps.LatLngBounds();
+                for (var i = 0; i < markers.length; i++) {
+                bounds.extend(markers[i].getPosition());
+                }
+                map.fitBounds(bounds);
+            }
+        } )
             function addMarker(map, lat, long, title, icon, content) {
             var marker = new google.maps.Marker({
                 position: new google.maps.LatLng(lat,long),
@@ -87,9 +147,7 @@
             }
 
             function initializeMap() {
-            var map = new google.maps.Map(document.getElementById("map"));
-
-            var markers = [];
+            map = new google.maps.Map(document.getElementById("map"));
 
             markers.push(addMarker(map,
                 51.4982,
@@ -148,10 +206,4 @@
 
             google.maps.event.addDomListener(window, 'load', initializeMap);
         </script>
-    </section>
-
-    <section>
-
-    </section>
-
 <?php get_footer();?>
