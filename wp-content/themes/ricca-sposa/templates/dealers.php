@@ -19,14 +19,52 @@
     <section class="dealers-country">
         <h2 class="dealers-country_title">Select country from the list:</h2>
         <div class="dealers-listCountry">
-            <a href="#" id="uk" class="listCountry-btn"
-               data-marker="Ukraine">Ukraine</a>
-            <a href="#" id="ru" class="listCountry-btn">Russia</a>
-            <a href="http://localhost/countries/belarus/" class="listCountry-btn">Belarus</a>
+            <a href="/dealers/ukraine/" class="listCountry-btn mr-37" data-marker="Ukraine">Ukraine</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Russia">Russia</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Belarus">Belarus</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Kazakhstan">KAZAKHSTAN</a>
+            <a href="#" class="listCountry-btn" data-marker="Lithuania">LITHUANIA</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Romania">ROMANIA</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Croatia">CROATIA</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Germany">GERMANY</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Greece">GREECE</a>
+            <a href="#" class="listCountry-btn" data-marker="Cyprys">CYPRYS</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Uae">UAE</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Italy">ITALY</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Austria">AUSTRIA</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Sweden">SWEDEN</a>
+            <a href="#" class="listCountry-btn" data-marker="Africa">AFRICA</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="United Kingdom">UNITED KINGDOM</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Usa">USA</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Canada">CANADA</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Portugal">PORTUGAL</a>
+            <a href="#" class="listCountry-btn" data-marker="Poland">POLAND</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Slovakia">SLOVAKIA</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Serbia">SERBIA</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Dominican">DOMINICAN</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Azerbajan">AZERBAJAN</a>
+            <a href="#" class="listCountry-btn" data-marker="China">CHINA</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="France">FRANCE</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Armenia">ARMENIA</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Latvia">LATVIA</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Bosnia and Herzegovina">BOSNIA AND<br>HERZEGOVINA</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Bulgaria">BULGARIA</a>
+            <a href="#" class="listCountry-btn" data-marker="Moldova">MOLDOVA</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Brazil">BRAZIL</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Taiwan">TAIWAN</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Algeria">ALGERIA</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Norway">NORWAY</a>
+            <a href="#" class="listCountry-btn" data-marker="Slovenia">SLOVENIA</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="New Zealand">NEW ZEALAND</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Qatar">QATAR</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Australia">AUSTRALIA</a>
+            <a href="#" class="listCountry-btn mr-37" data-marker="Switzerland">SWITZERLAND</a>
+            <a href="#" class="listCountry-btn" data-marker="Singapore">SINGAPORE</a>
+            <a href="#" class="listCountry-btn" data-marker="Uzbekistan">UZBEKISTAN</a>
         </div>
     </section>
 
-    <section class="dealers-block" style="display: none;">
+    <section class="dealers-block">
         <div class="dealers-selected">
             <h2 class="selected-title">Select country and city:</h2>
         </div>
@@ -54,22 +92,16 @@
         <div class="dealers-line"></div>
 
         <div class="dealers-list">
-            <dis class="container-list cities-list">
-                <ul>
-                    <li>Chernigov</li>
-                    <li>Kyiv</li>
-                    <li>Sumy</li>
-                </ul>
-                <ul>
-                    <li>Odessa</li>
-                    <li>Lviv</li>
-                    <li>Kharkiv</li>
-                </ul>
-            </dis>
+            <dis class="container-list cities-list"></dis>
         </div>
+    </section>
 
+    <section class="dealers-map">
         <div id="map" class="map"></div>
-
+        <div class="dealers-map_block">
+            <a href="/partnership/" class="dealers-map_btn">Join Us</a>
+            <p class="dealers-map_string">How to become a partner of Ricca Sposa</p>
+        </div>
     </section>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEGT1m3rS0e7uwvz4zm2uTLBq425VB8hQ"></script>
@@ -103,11 +135,42 @@
             markers = [];
         }
 
+        function loadAllCountries() {
+
+            deleteMarkers();
+
+            $.each( county, function( index, value ){
+                value.forEach(function (marker) {
+
+                markers.push(addMarker(map,
+                    marker.lat,
+                    marker.long,
+                    marker.name,
+                    "<?= get_template_directory_uri();?>/img/icon-marker.png",
+                    marker.name));
+
+                });
+
+            });
+
+            
+            if (markers.length == 1) {
+                map.setCenter(markers[0].getPosition());
+                map.setZoom(8);
+            } else {
+                var bounds = new google.maps.LatLngBounds();
+                for (var i = 0; i < markers.length; i++) {
+                    bounds.extend(markers[i].getPosition());
+                }
+                map.fitBounds(bounds);
+            }
+        }
 
         $(".listCountry-btn").click(function (event) {
             event.preventDefault();
 
             $('.dealers-block').show();
+            $('.dealers-country').hide();
             var countryName = $(event.target).data('marker');
 
             deleteMarkers();
@@ -147,19 +210,18 @@
             citiesName.forEach(function (city) {
 
                 if (cityLast === city) {
-                    content += '<li>' + city + '<li></ul>';
+                    content += '<li>' + city + '</li></ul>';
                 }
                 else {
                     if (contentIndex < 3) {
-                        content += '<li>' + city + '<li>';
+                        content += '<li>' + city + '</li>';
                     }
                     else {
-                        content += '</ul><ul><li>' + city + '<li>';
+                        content += '</ul><ul><li>' + city + '</li>';
                         contentIndex = 0
                     }
                     contentIndex += 1
                 }
-
             });
 
             $('.cities-list').html(content);
@@ -183,60 +245,7 @@
 
         function initializeMap() {
             map = new google.maps.Map(document.getElementById("map"));
-
-            markers.push(addMarker(map,
-                51.4982,
-                31.2893,
-                "Chernigov ",
-                "<?= get_template_directory_uri();?>/img/icon-marker.png",
-                "Chernigov "));
-
-            markers.push(addMarker(map,
-                50.4501,
-                30.5233,
-                "Kyiv ",
-                "<?= get_template_directory_uri();?>/img/icon-marker.png",
-                "Kyiv "));
-
-            markers.push(addMarker(map,
-                50.9215,
-                34.8253,
-                "Sumy ",
-                "<?= get_template_directory_uri();?>/img/icon-marker.png",
-                "Sumy "));
-
-            markers.push(addMarker(map,
-                46.4598,
-                30.5717,
-                "Odessa ",
-                "<?= get_template_directory_uri();?>/img/icon-marker.png",
-                "Odessa "));
-
-            markers.push(addMarker(map,
-                49.8327,
-                23.9421,
-                "Lviv ",
-                "<?= get_template_directory_uri();?>/img/icon-marker.png",
-                "Lviv "));
-
-            markers.push(addMarker(map,
-                49.9935,
-                36.2304,
-                "Kharkiv ",
-                "<?= get_template_directory_uri();?>/img/icon-marker.png",
-                "Kharkiv "));
-
-
-            if (markers.length == 1) {
-                map.setCenter(markers[0].getPosition());
-                map.setZoom(8);
-            } else {
-                var bounds = new google.maps.LatLngBounds();
-                for (var i = 0; i < markers.length; i++) {
-                    bounds.extend(markers[i].getPosition());
-                }
-                map.fitBounds(bounds);
-            }
+            loadAllCountries();
         }
 
         google.maps.event.addDomListener(window, 'load', initializeMap);
