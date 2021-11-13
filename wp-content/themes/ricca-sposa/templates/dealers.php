@@ -204,8 +204,8 @@
             $('.cities-list').html('');
 
             var content = '<ul>';
-            var contentIndex = 0;
-            var cityLast = citiesName[citiesName.length]
+            var cityLast = citiesName[citiesName.length ]
+            var cityMiddle = citiesName[citiesName.length /2]
 
             citiesName.forEach(function (city) {
 
@@ -213,14 +213,12 @@
                     content += '<li>' + city + '</li></ul>';
                 }
                 else {
-                    if (contentIndex < 3) {
+                    if (cityMiddle !== city ) {
                         content += '<li>' + city + '</li>';
                     }
                     else {
                         content += '</ul><ul><li>' + city + '</li>';
-                        contentIndex = 0
                     }
-                    contentIndex += 1
                 }
             });
 

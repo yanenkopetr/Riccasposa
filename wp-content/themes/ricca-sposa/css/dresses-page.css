@@ -1,0 +1,62 @@
+.header {
+    background: #C48E8E;
+}
+.logo svg path {
+    fill: #fff;
+}
+.header .nav-item a {
+    color: white;
+}
+.header .nav-item.current-menu-item > a {
+    color: #fff;
+}
+.header .nav-item a:before {
+    background: white;
+}
+.header:after {
+    background: rgb(255 255 255 / 50%);
+}
+.section-dresses {
+    background: #C48E8E;
+    height: 825px;
+    padding-top: 160px;
+}
+.dresses-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dresses-block a {
+    font-family: Cormorant;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 119%;
+    letter-spacing: 0.21em;
+    text-transform: uppercase;
+    color: #FAFAFA;
+    text-decoration: none;
+}
+.dresses-block hr{
+    width: 131px;
+    height: 1.3px;
+    background: #FAFAFA;
+    margin: 50px 0;
+}
+.dresses-social {
+    margin-top: 29px;
+}
+.dresses-social ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding-left: 44px;
+}
+.dresses-social ul li {
+    margin-right: 25px;
+}

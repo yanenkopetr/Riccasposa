@@ -35,47 +35,47 @@ function add_additional_class_on_li($classes, $item, $args) {
 add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
 
 // Add custom post types
-add_action( 'init', 'register_post_types' );
-function register_post_types() {
-	// Country
-	$country_labels = array(
-		'name'               => _x('Страны', 'post type general name'),
-		'singular_name'      => _x('Страна', 'post type singular name'),
-		'add_new'            => _x('Добавить', ''),
-		'add_new_item'       => __('Добавить'),
-		'edit_item'          => __('Редактировать'),
-		'new_item'           => __('Новая страна'),
-		'view_item'          => __('Смотреть'),
-		'search_items'       => __('Найти'),
-		'not_found'          => __('Не найдено'),
-		'not_found_in_trash' => __('Пусто'),
-		'parent_item_colon'  => ''
-	);
+// add_action( 'init', 'register_post_types' );
+// function register_post_types() {
+// 	// Country
+// 	$country_labels = array(
+// 		'name'               => _x('Страны', 'post type general name'),
+// 		'singular_name'      => _x('Страна', 'post type singular name'),
+// 		'add_new'            => _x('Добавить', ''),
+// 		'add_new_item'       => __('Добавить'),
+// 		'edit_item'          => __('Редактировать'),
+// 		'new_item'           => __('Новая страна'),
+// 		'view_item'          => __('Смотреть'),
+// 		'search_items'       => __('Найти'),
+// 		'not_found'          => __('Не найдено'),
+// 		'not_found_in_trash' => __('Пусто'),
+// 		'parent_item_colon'  => ''
+// 	);
 
-	$country_args = array(
-		'labels'             => $country_labels,
-		'public'             => true,
-		'has_archive'        => true,
-		'publicly_queryable' => true,
-		'show_ui'            => true,
-		'rewrite'            => true,
-		'query_var'          => true,
-		'capability_type'    => 'post',
-		'hierarchical'       => false,
-		'_builtin'           => false,
-		'rewrite'            => array('slug' => 'countries', 'with_front' => true),
-		'show_in_nav_menus'  => false,
-		'menu_position'      => 20,
-		'menu_icon'          => 'dashicons-admin-page',
-		'supports'           => array(
-			'title',
-			'editor',
-			'thumbnail'
-		)
-	);
-	register_post_type('countries', $country_args);
+// 	$country_args = array(
+// 		'labels'             => $country_labels,
+// 		'public'             => true,
+// 		'has_archive'        => true,
+// 		'publicly_queryable' => true,
+// 		'show_ui'            => true,
+// 		'rewrite'            => true,
+// 		'query_var'          => true,
+// 		'capability_type'    => 'post',
+// 		'hierarchical'       => false,
+// 		'_builtin'           => false,
+// 		'rewrite'            => array('slug' => 'countries', 'with_front' => true),
+// 		'show_in_nav_menus'  => false,
+// 		'menu_position'      => 20,
+// 		'menu_icon'          => 'dashicons-admin-page',
+// 		'supports'           => array(
+// 			'title',
+// 			'editor',
+// 			'thumbnail'
+// 		)
+// 	);
+// 	register_post_type('countries', $country_args);
 
-	// Country
+// 	// Country
 
 	$dress_labels = array(
 		'name'               => _x('Платья', 'post type general name'),
@@ -114,160 +114,146 @@ function register_post_types() {
 	);
 	register_post_type('dresses', $dress_args);
 
-	// Exchange Rates
-	$exchange_labels = array(
-		'name'               => _x('Курс валют', 'post type general name'),
-		'singular_name'      => _x('Курс валют', 'post type singular name'),
-		'add_new'            => _x('Добавить', ''),
-		'add_new_item'       => __('Добавить'),
-		'edit_item'          => __('Редактировать'),
-		'new_item'           => __('Новое'),
-		'view_item'          => __('Смотреть'),
-		'search_items'       => __('Найти'),
-		'not_found'          => __('Не найдено'),
-		'not_found_in_trash' => __('Пусто'),
-		'parent_item_colon'  => ''
-	);
+// 	// Exchange Rates
+// 	$exchange_labels = array(
+// 		'name'               => _x('Курс валют', 'post type general name'),
+// 		'singular_name'      => _x('Курс валют', 'post type singular name'),
+// 		'add_new'            => _x('Добавить', ''),
+// 		'add_new_item'       => __('Добавить'),
+// 		'edit_item'          => __('Редактировать'),
+// 		'new_item'           => __('Новое'),
+// 		'view_item'          => __('Смотреть'),
+// 		'search_items'       => __('Найти'),
+// 		'not_found'          => __('Не найдено'),
+// 		'not_found_in_trash' => __('Пусто'),
+// 		'parent_item_colon'  => ''
+// 	);
 
-	$exchange_args = array(
-		'labels'             => $exchange_labels,
-		'public'             => true,
-		'has_archive'        => false,
-		'publicly_queryable' => true,
-		'show_ui'            => true,
-		'rewrite'            => true,
-		'query_var'          => true,
-		'capability_type'    => 'post',
-		'hierarchical'       => false,
-		'_builtin'           => false,
-		'rewrite'            => array('slug' => 'exchange', 'with_front' => true),
-		'show_in_nav_menus'  => false,
-		'menu_position'      => 20,
-		'menu_icon'          => 'dashicons-admin-page',
-		'supports'           => array(
-			'title'
-		)
-	);
-	register_post_type('exchange', $exchange_args);
+// 	$exchange_args = array(
+// 		'labels'             => $exchange_labels,
+// 		'public'             => true,
+// 		'has_archive'        => false,
+// 		'publicly_queryable' => true,
+// 		'show_ui'            => true,
+// 		'rewrite'            => true,
+// 		'query_var'          => true,
+// 		'capability_type'    => 'post',
+// 		'hierarchical'       => false,
+// 		'_builtin'           => false,
+// 		'rewrite'            => array('slug' => 'exchange', 'with_front' => true),
+// 		'show_in_nav_menus'  => false,
+// 		'menu_position'      => 20,
+// 		'menu_icon'          => 'dashicons-admin-page',
+// 		'supports'           => array(
+// 			'title'
+// 		)
+// 	);
+// 	register_post_type('exchange', $exchange_args);
 
-	flush_rewrite_rules();
-}
+// 	flush_rewrite_rules();
+// }
 
 add_action('init', 'register_taxonomies',0);
 function register_taxonomies() {
 
-	$collections = array(
-		'name'              => _x('Коллекции', 'taxonomy general name'),
-		'singular_name'     => _x('Коллекция', 'taxonomy singular name'),
-		'search_items'      => __('Поиск'),
-		'all_items'         => __('Всё'),
-		'parent_item'       => __('Parent'),
-		'parent_item_colon' => __('Parent:'),
-		'edit_item'         => __('Редакттировать'),
-		'update_item'       => __('Обновить'),
-		'add_new_item'      => __('Add new'),
-		'new_item_name'     => __('New category name'),
-	);
+// 	$collections = array(
+// 		'name'              => _x('Коллекции', 'taxonomy general name'),
+// 		'singular_name'     => _x('Коллекция', 'taxonomy singular name'),
+// 		'search_items'      => __('Поиск'),
+// 		'all_items'         => __('Всё'),
+// 		'parent_item'       => __('Parent'),
+// 		'parent_item_colon' => __('Parent:'),
+// 		'edit_item'         => __('Редакттировать'),
+// 		'update_item'       => __('Обновить'),
+// 		'add_new_item'      => __('Add new'),
+// 		'new_item_name'     => __('New category name'),
+// 	);
 
-	register_taxonomy('collections', array('dresses'), array(
-		'hierarchical' => true,
-		'labels'       => $collections,
-		'show_ui'      => true,
-		'query_var'    => true,
-		'rewrite'      => array('slug' => 'collections'),
-	));
+// 	register_taxonomy('collections', array('dresses'), array(
+// 		'hierarchical' => true,
+// 		'labels'       => $collections,
+// 		'show_ui'      => true,
+// 		'query_var'    => true,
+// 		'rewrite'      => array('slug' => 'collections'),
+// 	));
 
-	$types = array(
-        'name'              => _x('Тип платья', 'taxonomy general name'),
-        'singular_name'     => _x('Тип платья', 'taxonomy singular name'),
-        'search_items'      => __('Поиск'),
-        'all_items'         => __('Всё'),
-        'parent_item'       => __('Parent'),
-        'parent_item_colon' => __('Parent:'),
-        'edit_item'         => __('Редакттировать'),
-        'update_item'       => __('Обновить'),
-        'add_new_item'      => __('Add new'),
-        'new_item_name'     => __('New category name'),
-    );
+// 	$types = array(
+//         'name'              => _x('Тип платья', 'taxonomy general name'),
+//         'singular_name'     => _x('Тип платья', 'taxonomy singular name'),
+//         'search_items'      => __('Поиск'),
+//         'all_items'         => __('Всё'),
+//         'parent_item'       => __('Parent'),
+//         'parent_item_colon' => __('Parent:'),
+//         'edit_item'         => __('Редакттировать'),
+//         'update_item'       => __('Обновить'),
+//         'add_new_item'      => __('Add new'),
+//         'new_item_name'     => __('New category name'),
+//     );
 
-    register_taxonomy('type', array('dresses'), array(
-        'hierarchical' => true,
-        'labels'       => $types,
-        'show_ui'      => true,
-        'query_var'    => true,
-        'rewrite'      => array('slug' => 'type'),
-    ));
+//     register_taxonomy('type', array('dresses'), array(
+//         'hierarchical' => true,
+//         'labels'       => $types,
+//         'show_ui'      => true,
+//         'query_var'    => true,
+//         'rewrite'      => array('slug' => 'type'),
+//     ));
 
-    $sale = array(
-        'name'              => _x('Sale', 'taxonomy general name'),
-        'singular_name'     => _x('Sale', 'taxonomy singular name'),
-        'search_items'      => __('Поиск'),
-        'all_items'         => __('Всё'),
-        'parent_item'       => __('Parent'),
-        'parent_item_colon' => __('Parent:'),
-        'edit_item'         => __('Редакттировать'),
-        'update_item'       => __('Обновить'),
-        'add_new_item'      => __('Add new'),
-        'new_item_name'     => __('New category name'),
-    );
+//     $sale = array(
+//         'name'              => _x('Sale', 'taxonomy general name'),
+//         'singular_name'     => _x('Sale', 'taxonomy singular name'),
+//         'search_items'      => __('Поиск'),
+//         'all_items'         => __('Всё'),
+//         'parent_item'       => __('Parent'),
+//         'parent_item_colon' => __('Parent:'),
+//         'edit_item'         => __('Редакттировать'),
+//         'update_item'       => __('Обновить'),
+//         'add_new_item'      => __('Add new'),
+//         'new_item_name'     => __('New category name'),
+//     );
 
-    register_taxonomy('sale', array('dresses'), array(
-        'hierarchical' => true,
-        'labels'       => $sale,
-        'show_ui'      => true,
-        'query_var'    => true,
-        'rewrite'      => array('slug' => 'sale'),
-    ));
+//     register_taxonomy('sale', array('dresses'), array(
+//         'hierarchical' => true,
+//         'labels'       => $sale,
+//         'show_ui'      => true,
+//         'query_var'    => true,
+//         'rewrite'      => array('slug' => 'sale'),
+//     ));
 
-    $silhouette = array(
-       'name'              => _x('Силуэт', 'taxonomy general name'),
-       'singular_name'     => _x('Силуэт', 'taxonomy singular name'),
-       'search_items'      => __('Поиск'),
-       'all_items'         => __('Всё'),
-       'parent_item'       => __('Parent'),
-       'parent_item_colon' => __('Parent:'),
-       'edit_item'         => __('Редакттировать'),
-       'update_item'       => __('Обновить'),
-       'add_new_item'      => __('Add new'),
-       'new_item_name'     => __('New category name'),
-   );
+//     $silhouette = array(
+//        'name'              => _x('Силуэт', 'taxonomy general name'),
+//        'singular_name'     => _x('Силуэт', 'taxonomy singular name'),
+//        'search_items'      => __('Поиск'),
+//        'all_items'         => __('Всё'),
+//        'parent_item'       => __('Parent'),
+//        'parent_item_colon' => __('Parent:'),
+//        'edit_item'         => __('Редакттировать'),
+//        'update_item'       => __('Обновить'),
+//        'add_new_item'      => __('Add new'),
+//        'new_item_name'     => __('New category name'),
+//    );
 
-   register_taxonomy('silhouette', array('dresses'), array(
-       'hierarchical' => true,
-       'labels'       => $silhouette,
-       'show_ui'      => true,
-       'query_var'    => true,
-       'rewrite'      => array('slug' => 'silhouette'),
-   ));
+//    register_taxonomy('silhouette', array('dresses'), array(
+//        'hierarchical' => true,
+//        'labels'       => $silhouette,
+//        'show_ui'      => true,
+//        'query_var'    => true,
+//        'rewrite'      => array('slug' => 'silhouette'),
+//    ));
 
 }
 
-if (function_exists('register_sidebar')) {
-    register_sidebar( array(
-        'name'          => __( 'Dresses filter', '' ),
-    	'id'            => 'filter_taxonomy',
-    	'description'   => '',
-        'class'         => '',
-    	'before_widget' => '',
-    	'after_widget'  => '',
-    	'before_title'  => '<h2 class="widgettitle">',
-    	'after_title'   => '</h2>'
-    ) );
-}
-
-// Шаблон для стран
-	add_filter( 'single_template', function ( $single_template ) {
-	
-		$parent     = 'countries'; //Здесь вставляем id категории(рубрики) для которой хотите изменить шаблон у детальной страницы записи
-		$categories = get_categories( 'child_of=' . $parent );
-		$cat_names  = wp_list_pluck( $categories, 'name' );
-	
-		if ( has_category( 'movies' ) || has_category( $cat_names ) ) {
-			$single_template = dirname( __FILE__ ) . '/single-countries.php'; // название файла шаблона
-		}
-		return $single_template;
-	}, PHP_INT_MAX, 2 );
-// 
+// if (function_exists('register_sidebar')) {
+//     register_sidebar( array(
+//         'name'          => __( 'Dresses filter', '' ),
+//     	'id'            => 'filter_taxonomy',
+//     	'description'   => '',
+//         'class'         => '',
+//     	'before_widget' => '',
+//     	'after_widget'  => '',
+//     	'before_title'  => '<h2 class="widgettitle">',
+//     	'after_title'   => '</h2>'
+//     ) );
+// }
 
 // remove radio buttons validation
 remove_filter('wpcf7_validate_radio', 'wpcf7_checkbox_validation_filter', 10);
