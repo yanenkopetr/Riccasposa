@@ -10,7 +10,7 @@
 
             <div>
                 <span>Menu</span>
-                <ul>
+                <ul class="footer_link">
                     <li><a>Wedding</a></li>
                     <li><a>Evening</a></li>
                     <li><a>ACCESSORIES</a></li>
@@ -19,11 +19,9 @@
 
             <div>
                 <span>Newsletter</span>
-                <ul>
-                    <li><a>Wedding</a></li>
-                    <li><a>Evening</a></li>
-                    <li><a>ACCESSORIES</a></li>
-                </ul>
+                <div class="form newslatter">
+                    <?php echo do_shortcode('[contact-form-7 id="285" title="News letter"]');?>
+                </div>
             </div>
 
             <div>

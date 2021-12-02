@@ -18,7 +18,7 @@
 }
 .section-dresses {
     background: #C48E8E;
-    height: 825px;
+    height: 100vh;
     padding-top: 160px;
 }
 .dresses-block {
@@ -44,7 +44,8 @@
     margin: 50px 0;
 }
 .dresses-social {
-    margin-top: 29px;
+    position: absolute;
+    bottom:20px;
 }
 .dresses-social ul {
     margin: 0;
